@@ -1,19 +1,24 @@
 <template lang="pug">
   ElContainer
-    ElHeader(class="header" height="150px")
-      h1
-        | Read to fork it all?
+    ElHeader(class="header" height="auto")
+      h1.title
+        |ForkItList
+      
       .header__navigation
         .header__cities.stack-10-horizontal
           template(v-for="(city) in cities")
             button(:class="{ 'header__cities--active': city === currentCity }" @click="setCurrentCity(city)")
               | {{city}}
         .header__types.stack-10-horizontal
-          ElCheckboxGroup(v-model="selectedTypes")
+          ElCheckboxGroup(v-model="selectedTypes" fill="#3d2b1f" text-color="#3d2b1f")
             template(v-for="(type) in types")
-              ElCheckbox(:label="type")
+              ElCheckbox(:label="type" )
+                span.header__type-icon
+                  i(:class="getTypeIcon(type)")
                 | {{type}}
     ElMain
+      h2.subtitle
+        | Read to fork it all?
       .card-grid
         template(v-for="(place) in filterRestaurants(currentCity)")
           RestaurantCard(:restaurant="place" :selectedTypes="selectedTypes")
@@ -28,6 +33,7 @@ export default {
       restaurants: [],
       cities: [],
       types: ['breakfast', 'lunch', 'dinner', 'drinks', 'coffee', 'snacks'],
+      typeIcons: {breakfast: 'egg-fried', lunch: 'sandwich', dinner: 'salad', drinks: 'glass-martini-alt', coffee: 'coffee-togo', snacks: 'cookie-bite'},
       selectedTypes: ['breakfast', 'lunch', 'dinner', 'drinks', 'coffee', 'snacks'],
       currentCity: 'Victoria'
     }
@@ -61,19 +67,38 @@ export default {
     },
     setCurrentCity(city) {
       return this.currentCity = city
-    }
+    },
+    getTypeIcon(type) {
+      return `far fa-${this.typeIcons[type]}`
+    },
   },
 }
 </script>
 <style lang="scss">
+
+:root {
+  --primary: #3d2b1f;
+  --blue: #0f5e7f;
+  --red: #f01206;
+  --green: #8db600;
+  --purple: #75005b;
+  --orange: #ff8400;
+  --pink: #f54c4d;
+  --light-grey: #efefef;
+  --medium-grey: #666;
+  --dark-grey: #393939;
+  --black: #36454f;
+  --white: #fff;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  background: #ccc;
-    font-family: system-ui, sans-serif;
-
+  background: var(--light-grey);
+  font-family: system-ui, sans-serif;
+  color: var(--black);
 }
 
 .el-main {
@@ -98,6 +123,19 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
 .el-header, .el-footer {
   background-color: white;
   display: flex;
@@ -108,13 +146,16 @@ h1, h2, h3, h4, h5 {
 .el-header {
   display: flex;
   flex-direction: column;
-  margin: -10px -10px 30px -10px;
-  height: 100px;
+  margin: -10px -10px 20px -10px;
+  padding: 30px 10px 5px 10px;
 }
 
-.header {
-    padding: 20px 10px;
+.title {
+  margin-bottom: 20px;
+}
 
+.subtitle {
+  margin-bottom: 30px;
 }
 
 .header__navigation {
@@ -141,6 +182,31 @@ h1, h2, h3, h4, h5 {
 .header__cities--active {
   font-weight: bold;
   border-bottom: 1px solid black;
+}
+
+.header__types {
+  border-top: 1px solid var(--medium-grey);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.header__type-icon {
+  margin-right: 4px;
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: var(--blue);
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.el-checkbox__inner:hover {
+    border-color: var(--blue);
 }
 
 .el-footer {
@@ -191,4 +257,5 @@ h1, h2, h3, h4, h5 {
 i[class*="fa-"] {
   opacity: 0.85;
 }
+
 </style>

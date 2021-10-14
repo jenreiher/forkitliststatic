@@ -1,21 +1,21 @@
 <template lang="pug">
 ElCard(v-if="displayCard" class="box-card restaurant-card" shadow="hover")
     .restaurant-card__header(slot="header" class="clearfix")
-        h2.restaurant-card__name(class="overflow-nicely")
+        h3.restaurant-card__name(class="overflow-nicely")
             | {{restaurant.name}}
-    h3.restaurant-card__description(v-if="restaurant.description")
+    h4.restaurant-card__description(v-if="restaurant.description")
         | {{restaurant.description}}
-    .restaurant-card__address(v-if="restaurant.address")
-        span
-            i(class="fas fa-map-marker-alt u-mr--5")
-            a(:href="searchLink" target="_blank")
-                | {{restaurant.address}}
+    .restaurant-card__meta
+        span.restaurant-card__address(v-if="restaurant.address" class="overflow-nicely")
+                i(class="fas fa-map-marker-alt u-mr--10")
+                a(:href="searchLink" target="_blank")
+                    | {{restaurant.address}}
+                    i(class="fas fa-chevron-double-right u-ml--5")
+        span.restaurant-card__url(v-if="restaurant.url" class="overflow-nicely")
+            i(class="fas fa-link u-mr--10")
+            a(:href="restaurant.url" target="_blank")
+                | {{getShortWebsite}}
                 i(class="fas fa-chevron-double-right u-ml--5")
-    span.restaurant-card__url(v-if="restaurant.url" class="overflow-nicely")
-        i(class="fas fa-link u-mr--5")
-        a(:href="restaurant.url" target="_blank")
-            | {{restaurant.url}}
-            i(class="fas fa-chevron-double-right u-ml--5")
     .restaurant-card__types
         .restaurant-card__type
             span.restaurant-card__type-breakfast(v-if="restaurant.breakfast === 't'")
@@ -60,7 +60,15 @@ export default {
         },
         searchLink() {
            return `https://www.google.com/maps/search/${this.restaurant.address} ${this.restaurant.city} ${this.restaurant.region} ${this.restaurant.country}`
-        }
+        },
+        getShortWebsite() {
+            let output = this.restaurant.url
+            output = output.replace('https://', '')
+            output = output.replace('http://', '')
+            output = output.replace('www.', '')
+            output = output.substr(-1) === '/' ? output.slice(0, -1) : output
+            return output
+        },  
     }
 }
 </script>
@@ -71,7 +79,14 @@ export default {
 }
 
 .restaurant-card__description {
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--dark-grey);
+    margin-bottom: 20px;
+}
+
+.el-card__header {
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 .el-card__body {
@@ -80,8 +95,17 @@ export default {
     height: calc(100% - 4em);
 }
 
-.el-card__body > * {
-    margin-bottom: 10px;
+.restaurant-card__meta {
+    display: inline-flex;
+    flex-direction: column;
+
+    > * {
+        margin-bottom: 10px;
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .restaurant-card__types {
@@ -94,9 +118,12 @@ export default {
 .restaurant-card__type {
     align-self: flex-end;
     font-size: 2.5rem;
+    i {
+        color: var(--blue);
+    }
+    
 }
 .restaurant-card__type > * {
     margin-right: 15px;
-    
 }
 </style>
