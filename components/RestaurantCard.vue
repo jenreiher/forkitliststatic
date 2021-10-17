@@ -47,12 +47,12 @@ export default {
   computed: {
     displayCard() {
       const myTypes = [];
-      this.restaurant.breakfast === "t" ? myTypes.push("breakfast") : null;
-      this.restaurant.lunch === "t" ? myTypes.push("lunch") : null;
-      this.restaurant.dinner === "t" ? myTypes.push("dinner") : null;
-      this.restaurant.drinks === "t" ? myTypes.push("drinks") : null;
-      this.restaurant.coffee === "t" ? myTypes.push("coffee") : null;
-      this.restaurant.snacks === "t" ? myTypes.push("snacks") : null;
+      this.restaurant.breakfast === "Yes" ? myTypes.push("breakfast") : null;
+      this.restaurant.lunch === "Yes" ? myTypes.push("lunch") : null;
+      this.restaurant.dinner === "Yes" ? myTypes.push("dinner") : null;
+      this.restaurant.drinks === "Yes" ? myTypes.push("drinks") : null;
+      this.restaurant.coffee === "Yes" ? myTypes.push("coffee") : null;
+      this.restaurant.snacks === "Yes" ? myTypes.push("snacks") : null;
 
       const filteredArray = this.selectedTypes.filter(value =>
         myTypes.includes(value)

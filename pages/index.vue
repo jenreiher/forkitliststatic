@@ -201,8 +201,6 @@ a {
 .types {
   border-bottom: 1px solid var(--medium-grey);
   width: 100%;
-  display: flex;
-  justify-content: center;
   padding: 10px 0;
   line-height: 1.75;
   margin-bottom: 30px;
