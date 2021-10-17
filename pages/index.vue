@@ -5,20 +5,21 @@
         |ForkItList
       
       .header__navigation
-        .header__cities.stack-10-horizontal
+        .header__cities
           template(v-for="(city) in cities")
             button(:class="{ 'header__cities--active': city === currentCity }" @click="setCurrentCity(city)")
               | {{city}}
-        .header__types.stack-10-horizontal
-          ElCheckboxGroup(v-model="selectedTypes" fill="#3d2b1f" text-color="#3d2b1f")
-            template(v-for="(type) in types")
-              ElCheckbox(:label="type" )
-                span.header__type-icon
-                  i(:class="getTypeIcon(type)")
-                | {{type}}
+        
     ElMain
       h2.subtitle
         | Read to fork it all?
+      .types
+          ElCheckboxGroup(v-model="selectedTypes" fill="#3d2b1f" text-color="#3d2b1f")
+            template(v-for="(type) in types" class="type")
+              ElCheckbox(:label="type" )
+                span.type-icon
+                  i(:class="getTypeIcon(type)")
+                | {{type}}
       .card-grid
         template(v-for="(place) in filterRestaurants(currentCity)")
           RestaurantCard(:restaurant="place" :selectedTypes="selectedTypes")
@@ -32,50 +33,62 @@ export default {
     return {
       restaurants: [],
       cities: [],
-      types: ['breakfast', 'lunch', 'dinner', 'drinks', 'coffee', 'snacks'],
-      typeIcons: {breakfast: 'egg-fried', lunch: 'sandwich', dinner: 'salad', drinks: 'glass-martini-alt', coffee: 'coffee-togo', snacks: 'cookie-bite'},
-      selectedTypes: ['breakfast', 'lunch', 'dinner', 'drinks', 'coffee', 'snacks'],
-      currentCity: 'Victoria'
-    }
+      types: ["breakfast", "lunch", "dinner", "drinks", "coffee", "snacks"],
+      typeIcons: {
+        breakfast: "egg-fried",
+        lunch: "sandwich",
+        dinner: "salad",
+        drinks: "glass-martini-alt",
+        coffee: "coffee-togo",
+        snacks: "cookie-bite"
+      },
+      selectedTypes: [
+        "breakfast",
+        "lunch",
+        "dinner",
+        "drinks",
+        "coffee",
+        "snacks"
+      ],
+      currentCity: "Victoria"
+    };
   },
   mounted() {
-    this.fetchData().then((res) => {
-      const data = res.data.body
-      const cities = []
+    this.fetchData().then(res => {
+      const data = res.data.body;
+      const cities = [];
 
-      data.forEach((restaurant) => {
-        cities.includes(restaurant.city) ? null : cities.push(restaurant.city)
-      })
+      data.forEach(restaurant => {
+        cities.includes(restaurant.city) ? null : cities.push(restaurant.city);
+      });
 
-      this.$data.restaurants = data
-      this.$data.cities = cities.sort((a, b) => a.localeCompare(b))
+      this.$data.restaurants = data;
+      this.$data.cities = cities.sort((a, b) => a.localeCompare(b));
 
-      return 
-    })
+      return;
+    });
   },
   methods: {
     async fetchData() {
-      const data = await this.$content('restaurants').fetch()
-      return { data }
+      const data = await this.$content("restaurants").fetch();
+      return { data };
     },
     filterRestaurants(city) {
-      const data = this.$data.restaurants.filter((restaurant) => {
-        
-        return restaurant.city === city
-      })
-      return data
+      const data = this.$data.restaurants.filter(restaurant => {
+        return restaurant.city === city;
+      });
+      return data;
     },
     setCurrentCity(city) {
-      return this.currentCity = city
+      return (this.currentCity = city);
     },
     getTypeIcon(type) {
-      return `far fa-${this.typeIcons[type]}`
-    },
-  },
-}
+      return `far fa-${this.typeIcons[type]}`;
+    }
+  }
+};
 </script>
 <style lang="scss">
-
 :root {
   --primary: #3d2b1f;
   --blue: #0f5e7f;
@@ -102,7 +115,7 @@ html {
 }
 
 .el-main {
-  padding: 30px 40px;
+  padding: 30px 20px;
 }
 
 button {
@@ -110,7 +123,7 @@ button {
   border-radius: 0;
   background: none;
   color: inherit;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-family: inherit;
   line-height: 1.2;
   white-space: nowrap;
@@ -119,7 +132,11 @@ button {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
@@ -136,7 +153,8 @@ a {
   color: var(--primary);
 }
 
-.el-header, .el-footer {
+.el-header,
+.el-footer {
   background-color: white;
   display: flex;
   align-items: center;
@@ -147,15 +165,12 @@ a {
   display: flex;
   flex-direction: column;
   margin: -10px -10px 20px -10px;
-  padding: 30px 10px 5px 10px;
+  padding: 30px;
+  line-height: 1.5;
 }
 
 .title {
   margin-bottom: 20px;
-}
-
-.subtitle {
-  margin-bottom: 30px;
 }
 
 .header__navigation {
@@ -164,7 +179,6 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-
 }
 
 .header__navigation > * {
@@ -184,33 +198,40 @@ a {
   border-bottom: 1px solid black;
 }
 
-.header__types {
-  border-top: 1px solid var(--medium-grey);
+.types {
+  border-bottom: 1px solid var(--medium-grey);
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 10px 0;
+  line-height: 1.75;
+  margin-bottom: 30px;
 }
 
-.header__type-icon {
+.type-icon {
   margin-right: 4px;
 }
 
-.el-checkbox__input.is-checked+.el-checkbox__label {
+.el-checkbox {
+  font-size: 16px;
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
   color: var(--blue);
 }
 
-.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
-    background-color: var(--blue);
-    border-color: var(--blue);
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: var(--blue);
+  border-color: var(--blue);
 }
 
 .el-checkbox__inner:hover {
-    border-color: var(--blue);
+  border-color: var(--blue);
 }
 
 .el-footer {
-  margin: 30px -10px -10px  -10px; 
+  margin: 30px -10px -10px -10px;
 }
 
 .el-container {
@@ -225,7 +246,6 @@ a {
   gap: 70px 70px;
   align-items: center;
   grid-auto-rows: 1fr;
-
 }
 
 .u-mr--5 {
@@ -249,13 +269,12 @@ a {
 }
 
 .overflow-nicely {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 i[class*="fa-"] {
-  opacity: 0.85;
+  opacity: 0.8;
 }
-
 </style>

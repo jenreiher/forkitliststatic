@@ -34,96 +34,101 @@ ElCard(v-if="displayCard" class="box-card restaurant-card" shadow="hover")
 </template>
 <script>
 export default {
-    props: {
-        restaurant: {
-            type: Object,
-            default: {}
-        },
-        selectedTypes: {
-            type: Array,
-            default: []
-        }
+  props: {
+    restaurant: {
+      type: Object,
+      default: {}
     },
-    computed: {
-        displayCard() {
-            const myTypes = []
-            this.restaurant.breakfast === 't' ? myTypes.push('breakfast') : null
-            this.restaurant.lunch === 't' ? myTypes.push('lunch') : null
-            this.restaurant.dinner === 't' ? myTypes.push('dinner') : null
-            this.restaurant.drinks === 't' ? myTypes.push('drinks') : null
-            this.restaurant.coffee === 't' ? myTypes.push('coffee') : null
-            this.restaurant.snacks === 't' ? myTypes.push('snacks') : null
-            
-            const filteredArray = this.selectedTypes.filter(value => myTypes.includes(value));
-
-            return filteredArray.length > 0
-        },
-        searchLink() {
-           return `https://www.google.com/maps/search/${this.restaurant.address} ${this.restaurant.city} ${this.restaurant.region} ${this.restaurant.country}`
-        },
-        getShortWebsite() {
-            let output = this.restaurant.url
-            output = output.replace('https://', '')
-            output = output.replace('http://', '')
-            output = output.replace('www.', '')
-            output = output.substr(-1) === '/' ? output.slice(0, -1) : output
-            return output
-        },  
+    selectedTypes: {
+      type: Array,
+      default: []
     }
-}
+  },
+  computed: {
+    displayCard() {
+      const myTypes = [];
+      this.restaurant.breakfast === "t" ? myTypes.push("breakfast") : null;
+      this.restaurant.lunch === "t" ? myTypes.push("lunch") : null;
+      this.restaurant.dinner === "t" ? myTypes.push("dinner") : null;
+      this.restaurant.drinks === "t" ? myTypes.push("drinks") : null;
+      this.restaurant.coffee === "t" ? myTypes.push("coffee") : null;
+      this.restaurant.snacks === "t" ? myTypes.push("snacks") : null;
+
+      const filteredArray = this.selectedTypes.filter(value =>
+        myTypes.includes(value)
+      );
+
+      return filteredArray.length > 0;
+    },
+    searchLink() {
+      return `https://www.google.com/maps/search/${this.restaurant.address} ${this.restaurant.city} ${this.restaurant.region} ${this.restaurant.country}`;
+    },
+    getShortWebsite() {
+      let output = this.restaurant.url;
+      output = output.replace("https://", "");
+      output = output.replace("http://", "");
+      output = output.replace("www.", "");
+      output = output.substr(-1) === "/" ? output.slice(0, -1) : output;
+      return output;
+    }
+  }
+};
 </script>
 <style lang="scss">
 .restaurant-card {
-    height: 350px;
-    max-height: 100%;
+  height: 350px;
+  max-height: 100%;
 }
 
 .restaurant-card__description {
-    font-weight: 500;
-    color: var(--dark-grey);
-    margin-bottom: 20px;
+  font-weight: 500;
+  color: var(--dark-grey);
+  margin-bottom: 30px;
 }
 
 .el-card__header {
-    background-color: var(--primary);
-    color: var(--white);
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .el-card__body {
-    display: flex;
-    flex-direction: column;
-    height: calc(100% - 4em);
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 4em);
 }
 
 .restaurant-card__meta {
-    display: inline-flex;
-    flex-direction: column;
+  display: inline-flex;
+  flex-direction: column;
 
-    > * {
-        margin-bottom: 10px;
-        
-        a:hover {
-            text-decoration: underline;
-        }
+  > * {
+    margin-bottom: 15px;
+
+    a:hover {
+      text-decoration: underline;
     }
+  }
 }
 
 .restaurant-card__types {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.el-card:hover .restaurant-card__types i {
+  color: red;
 }
 
 .restaurant-card__type {
-    align-self: flex-end;
-    font-size: 2.5rem;
-    i {
-        color: var(--blue);
-    }
-    
+  align-self: flex-end;
+  font-size: 2.5rem;
+  i {
+    color: var(--blue);
+  }
 }
 .restaurant-card__type > * {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 </style>
