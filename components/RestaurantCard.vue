@@ -18,17 +18,17 @@ ElCard(v-if="displayCard" class="box-card restaurant-card" shadow="hover")
                 i(class="fas fa-chevron-double-right u-ml--5")
     .restaurant-card__types
         .restaurant-card__type
-            span.restaurant-card__type-breakfast(v-if="restaurant.breakfast === 't'")
+            span.restaurant-card__type-breakfast(v-if="restaurant.breakfast === 'Yes'")
                 i(class="far fa-egg-fried")
-            span.restaurant-card__type-lunch(v-if="restaurant.lunch === 't'")
+            span.restaurant-card__type-lunch(v-if="restaurant.lunch === 'Yes'")
                 i(class="far fa-sandwich")
-            span.restaurant-card__type-dinner(v-if="restaurant.dinner === 't'")
+            span.restaurant-card__type-dinner(v-if="restaurant.dinner === 'Yes'")
                 i(class="far fa-salad")
-            span.restaurant-card__type-drinks(v-if="restaurant.drinks === 't'")
+            span.restaurant-card__type-drinks(v-if="restaurant.drinks === 'Yes'")
                 i(class="far fa-glass-martini-alt")
-            span.restaurant-card__type-coffee(v-if="restaurant.coffee === 't'")
+            span.restaurant-card__type-coffee(v-if="restaurant.coffee === 'Yes'")
                 i(class="far fa-coffee-togo")
-            span.restaurant-card__type-snacks(v-if="restaurant.snacks === 't'")
+            span.restaurant-card__type-snacks(v-if="restaurant.snacks === 'Yes'")
                 i(class="far fa-cookie-bite")
 
 </template>
@@ -118,7 +118,7 @@ export default {
 }
 
 .el-card:hover .restaurant-card__types i {
-  color: red;
+  opacity: 1;
 }
 
 .restaurant-card__type {

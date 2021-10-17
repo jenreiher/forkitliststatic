@@ -104,13 +104,15 @@ export default {
   --white: #fff;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 html {
   background: var(--light-grey);
-  font-family: system-ui, sans-serif;
+  font-family: "Alegreya Sans", system-ui, sans-serif;
   color: var(--black);
 }
 
