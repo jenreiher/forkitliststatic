@@ -24,7 +24,7 @@
         template(v-for="(place) in filterRestaurants(currentCity)")
           RestaurantCard(:restaurant="place" :selectedTypes="selectedTypes")
     ElFooter
-      | Footer
+      
 </template>
 
 <script>
