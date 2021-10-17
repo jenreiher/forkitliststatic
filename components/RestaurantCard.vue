@@ -131,4 +131,9 @@ export default {
 .restaurant-card__type > * {
   margin-right: 15px;
 }
+
+.fa-link,
+.fa-map-marker-alt {
+  color: var(--blue);
+}
 </style>
