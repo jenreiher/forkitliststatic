@@ -35,6 +35,10 @@ ElCard(v-if="displayCard" class="box-card restaurant-card" shadow="hover")
 <script>
 export default {
   props: {
+    currentItinerary: {
+      type: String,
+      default: ""
+    },
     restaurant: {
       type: Object,
       default: {}
@@ -54,9 +58,19 @@ export default {
       this.restaurant.coffee === "Yes" ? myTypes.push("coffee") : null;
       this.restaurant.snacks === "Yes" ? myTypes.push("snacks") : null;
 
-      const filteredArray = this.selectedTypes.filter(value =>
+      let filteredArray = [];
+      const split = this.restaurant.itineraries.split(",");
+
+      filteredArray = this.selectedTypes.filter(value =>
         myTypes.includes(value)
       );
+
+      if (this.currentItinerary != "All") {
+        console.log(this.currentItinerary);
+        filteredArray = filteredArray.filter(value =>
+          split.includes(this.currentItinerary)
+        );
+      }
 
       return filteredArray.length > 0;
     },

@@ -13,6 +13,18 @@
     ElMain
       h2.subtitle
         | Read to fork it all?
+      ElSelect(v-if="itineraries[currentCity] && itineraries[currentCity].length > 0" v-model="currentItinerary" placeholder="All" class="u-mt--10")
+        ElOption(
+          key="all"
+          label="All Restaurants"
+          value="All"
+        )
+        ElOption(
+          v-for="item in itineraries[currentCity]"
+          :key="item"
+          :label="item"
+          :value="item"
+        )
       .types
           ElCheckboxGroup(v-model="selectedTypes" fill="#3d2b1f" text-color="#3d2b1f")
             template(v-for="(type) in types" class="type")
@@ -22,12 +34,14 @@
                 | {{type}}
       .card-grid
         template(v-for="(place) in filterRestaurants(currentCity)")
-          RestaurantCard(:restaurant="place" :selectedTypes="selectedTypes")
+          RestaurantCard(:restaurant="place" :selectedTypes="selectedTypes" :currentItinerary="currentItinerary")
     ElFooter
       
 </template>
 
 <script>
+import _ from "lodash";
+
 export default {
   data() {
     return {
@@ -50,20 +64,49 @@ export default {
         "coffee",
         "snacks"
       ],
-      currentCity: "Victoria"
+      currentCity: "Victoria",
+      currentItinerary: "All",
+      itineraries: {}
     };
   },
   mounted() {
+    let itineraries = {};
+
     this.fetchData().then(res => {
       const data = res.data.body;
-      const cities = [];
+      let cities = [];
+      let itinerary = {};
 
       data.forEach(restaurant => {
+        itinerary = { [restaurant.city]: [] };
+
+        let split =
+          restaurant.itineraries.split(",") != ""
+            ? restaurant.itineraries.split(",")
+            : [];
+
         cities.includes(restaurant.city) ? null : cities.push(restaurant.city);
+
+        split.forEach(item => {
+          itinerary[restaurant.city] &&
+          (itinerary[restaurant.city].includes(item) ||
+            itineraries[restaurant.city].includes(item))
+            ? null
+            : itinerary[restaurant.city].push(item);
+        });
+
+        function customizer(objValue, srcValue) {
+          if (_.isArray(objValue)) {
+            return objValue.concat(srcValue);
+          }
+        }
+
+        itineraries = _.mergeWith(itineraries, itinerary, customizer);
       });
 
       this.$data.restaurants = data;
       this.$data.cities = cities.sort((a, b) => a.localeCompare(b));
+      this.$data.itineraries = itineraries;
 
       return;
     });
@@ -171,6 +214,10 @@ a {
   line-height: 1.5;
 }
 
+.el-select {
+  width: 300px;
+}
+
 .title {
   margin-bottom: 20px;
 }
@@ -262,6 +309,10 @@ a {
 
 .u-ml--10 {
   margin-left: 10px;
+}
+
+.u-mt--10 {
+  margin-top: 10px;
 }
 
 .overflow-hidden {
