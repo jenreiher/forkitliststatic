@@ -2,10 +2,12 @@
   ElContainer
     ElHeader(class="header" height="auto")
       h1.title
-        |ForkItList
+        span
+          i(class="fas fa-utensils u-mr--10")
+        | ForkItList
       
       .header__navigation
-        navigation.header__cities
+        .header__cities
           template(v-for="(city) in cities")
             button(:class="{ 'header__cities--active': city === currentCity }" @click="setCurrentCity(city)")
               | {{city}}
@@ -25,12 +27,16 @@
           :label="item"
           :value="item"
         )
+          span
+            i(v-if="!!getIcon(item)" :class="getIcon(item)" class="u-mr--10")
+            i(v-else class="fas fa-utensils u-mr--10")
+            | {{item}}
       .types
           ElCheckboxGroup(v-model="selectedTypes" fill="#3d2b1f" text-color="#3d2b1f")
             template(v-for="(type) in types" class="type")
               ElCheckbox(:label="type" )
                 span.type-icon
-                  i(:class="getTypeIcon(type)")
+                  i(:class="getIcon(type)")
                 | {{type}}
       .card-grid
         template(v-for="(place) in filterRestaurants(currentCity)")
@@ -48,13 +54,27 @@ export default {
       restaurants: [],
       cities: [],
       types: ["breakfast", "lunch", "dinner", "drinks", "coffee", "snacks"],
-      typeIcons: {
+      icons: {
         breakfast: "egg-fried",
         lunch: "sandwich",
         dinner: "salad",
         drinks: "glass-martini-alt",
         coffee: "coffee-togo",
-        snacks: "cookie-bite"
+        snacks: "cookie-bite",
+        "Greatest Hits": "city",
+        Seafood: "fish",
+        "Brunch for Days": "egg-fried",
+        "Craft Draught Beer": "beer",
+        "Belly up to the Bar": "cocktail",
+        "Cheap Eats": "dollar-sign",
+        "Taco Party": "taco",
+        "Dining out in Style": "hat-chef",
+        "Gluten-free Friendly": "wheat",
+        "Burgerz & Friez": "burger-soda",
+        Vegetarian: "apple-alt",
+        "Sweet Snacks": "pie",
+        "Patio Life": "sunglasses",
+        "Local Specialities": "map-marked"
       },
       selectedTypes: [
         "breakfast",
@@ -137,8 +157,8 @@ export default {
     setCurrentCity(city) {
       return (this.currentCity = city);
     },
-    getTypeIcon(type) {
-      return `far fa-${this.typeIcons[type]}`;
+    getIcon(type) {
+      return this.icons[type] ? `far fa-${this.icons[type]}` : null;
     }
   }
 };
@@ -166,7 +186,7 @@ export default {
 }
 
 *:focus-visible {
-  outline: 2px dotted var(--red);
+  outline: 2px dotted var(--red) !important;
 }
 
 html {

@@ -1,13 +1,13 @@
 ﻿id,name,itineraries,url,address,country,city,region,description,breakfast,lunch,dinner,drinks,coffee,snacks
-54,%2 Jazz,"Caffeine Fix, Sweet Snacks",http://2percentjazz.com,1701 Douglas St.,Canada,Victoria,BC,Old school coffee roasters with a lot of charm,No,No,No,No,Yes,Yes
+54,%2 Jazz,Sweet Snacks,http://2percentjazz.com,1701 Douglas St.,Canada,Victoria,BC,Old school coffee roasters with a lot of charm,No,No,No,No,Yes,Yes
 241,1 Pot,,,123 3 Ave SE,Canada,Calgary,AB,,No,No,No,No,No,No
-61,10 Acres,Patio Life,http://10acres.ca/,611 Courtney St.,Canada,Victoria,BC,"A little something for everyone, casual environment",No,Yes,Yes,Yes,No,No
+61,10 Acres,"Local Specialities, Patio Life",http://10acres.ca/,611 Courtney St.,Canada,Victoria,BC,"A little something for everyone, casual environment",No,Yes,Yes,Yes,No,No
 46,17 Mile House Pub,,http://www.17milehouse.com/,5126 Sooke Rd,Canada,Sooke,BC,Historical pub with an epic back patio and lawn games,No,Yes,Yes,Yes,No,No
 84,4 Stones Vegetarian,,https://www.fourstonesvegetarian.com/,7771 Westminster Hwy,Canada,Richmond,BC,,No,No,No,No,No,No
 563,6 Degrees,,https://www.6degreeseatery.com/,1590 Coal Harbour Quay,Canada,Vancouver,BC,,Yes,Yes,No,Yes,Yes,Yes
 157,Aalto Bistro,,http://www.aalto.is/,Sæmundargata 11,Iceland,Reykjavik,Reykjavik,,No,No,No,No,No,No
 211,Abuelos,,," Centro - Supmza. 001, Isla Mujeres",Mexico,Cancun,Quintana Roo,,No,No,No,No,No,No
-39,Agrius,"Belly up to the Bar, Dining out in Style, Greatest Hits",https://www.agriusrestaurant.com/,732 Yates St.,Canada,Victoria,BC,Upscale dining and classy to go baked goods,No,Yes,Yes,No,Yes,Yes
+39,Agrius,"Belly up to the Bar, Dining out in Style, Greatest Hits, Local Specialities",https://www.agriusrestaurant.com/,732 Yates St.,Canada,Victoria,BC,Upscale dining and classy to go baked goods,No,Yes,Yes,No,Yes,Yes
 521,Ahi assassin's,,,3111 Castle St,USA,Honolulu,Hawaii,Sustainable poke,No,Yes,Yes,No,No,No
 198,Aldea Corazon,,,Quinta Avenida 17 Mz. 27 Lote 14,Mexico,Playa del Carmen,Quintana Roo,,No,No,No,No,No,No
 251,Alderlea Farm,,https://www.alderleafarm.com/,3390 Glenora Road,Canada,Sooke,BC,,No,No,No,No,No,No
@@ -22,10 +22,9 @@
 599,Ask for Luigi,,,,Canada,Vancouver,BC,,No,No,No,No,No,No
 109,Askur,,http://www.askur.is/index.php/en/english,Suðurlandsbraut 4,Iceland,Reykjavik,,,No,No,No,No,No,No
 296,Attendant Fitzrovia,,https://the-attendant.com/,27A Foley St,England,London,,Coffee bar in an old bathroom,No,No,No,No,Yes,Yes
-250,Aubergine Grocery,Foodie Fernwood,http://auberginefoods.com/,1308 Gladstone Ave,Canada,Victoria,BC,,No,No,No,No,No,No
 59,Avalon,Brunch for Days,,1075 Fort St,Canada,Victoria,BC,"Small, classic diner",Yes,Yes,No,No,No,No
 60,Ayo Eat,Cheap Eats,,140-560 Johnson St. (Inner northwest corner of Market Square),Canada,Victoria,BC,Spicy Indonesian take out,No,Yes,No,No,No,No
-516,Ba Le Bahn Mi,Foodie Fort Lunch Crawl,https://ba-le-deli-victoria.business.site,774 Fort St,Canada,Victoria,BC,Vietnamese-style subs,No,Yes,No,No,No,No
+516,Ba Le Bahn Mi,,https://ba-le-deli-victoria.business.site,774 Fort St,Canada,Victoria,BC,Vietnamese-style subs,No,Yes,No,No,No,No
 186,Babe's Noodles and Bar,,https://www.babesnoodlesandbar.com/,Calle 10,Mexico,Playa del Carmen,Quintana Roo,,No,No,No,No,No,No
 123,Bæjarins Beztu Pylsur,,http://bbp.is/en/,"Tryggvatagata 1, 101",Iceland,Reykjavik,,,No,No,No,No,No,No
 325,Bahn Mi Boys,,http://www.banhmiboys.com/,392 Queen St W,Canada,Toronto,ON,,No,Yes,Yes,No,No,No
@@ -40,14 +39,14 @@
 190,Bar Ranita,,,Calle 10 Nte,Mexico,Playa del Carmen,Quintana Roo,,No,No,No,No,No,No
 317,Barcelona Bar,,https://barcelonatavern.com/toronto/always-fresh-locally-sourced/,"Corner of Hanna Ave &, Snooker St",Canada,Toronto,ON,Spanish tapas,No,Yes,Yes,No,No,No
 41,Bard and Banker,Craft Draught Beer,https://bardandbanker.com/,1022 Government St,Canada,Victoria,BC,High-street pub with large tables and higher prices,Yes,Yes,Yes,Yes,No,No
-49,Be Love,"Belly up to the Bar, Gluten Free Friendly, Vegetarian",http://beloverestaurant.ca/,1019 Blanshard St.,Canada,Victoria,BC,The best vegan food the city has to offer,No,Yes,Yes,Yes,No,No
+49,Be Love,"Belly up to the Bar, Gluten-free Friendly, Vegetarian",http://beloverestaurant.ca/,1019 Blanshard St.,Canada,Victoria,BC,The best vegan food the city has to offer,No,Yes,Yes,Yes,No,No
 527,Beach Ave,,https://www.beachavebarandgrill.com/menu,1-1012 Beach Avenue,Canada,Vancouver,BC,"Casual burgers, snacks and foods",Yes,Yes,Yes,No,No,No
 515,Beacon Drive In,Sweet Snacks,,126 Douglas St,Canada,Victoria,BC,Old school diner with lots of ice cream options,No,No,No,No,No,Yes
 160,Beer Garden,,,Porunnartun 1,Iceland,Reykjavik,Reykjavik,,No,No,No,No,No,No
 348,Beereau,,,,Germany,Berlin,Brandenburg,,No,No,No,Yes,No,No
 437,Bengal Barbecue,,https://allears.net/dlr/dining/menu/bengal-barbecue/lunch-dinner/,Adventureland,USA,Disneyland,California,"Poke bowls, bbq and rice bowls",No,Yes,Yes,No,No,No
 150,Bergsson Mathús,,http://www.bergsson.net/,Templarasund 3,Iceland,Reykjavik,Reykjavik,,No,No,No,No,No,No
-51,Big Wheel Burger,"Burgerz & Friez, Gluten Free Friendly, Vegetarian",http://bigwheelburger.com,341 Cook St.,Canada,Victoria,BC,Casual fast-food style burgers but with local ingredients,No,Yes,Yes,No,No,No
+51,Big Wheel Burger,"Burgerz & Friez, Gluten-free Friendly, Vegetarian",http://bigwheelburger.com,341 Cook St.,Canada,Victoria,BC,Casual fast-food style burgers but with local ingredients,No,Yes,Yes,No,No,No
 47,Bin 4 Burger Lounge,Burgerz & Friez,http://www.bin4burgerlounge.com/,911 Yates St.,Canada,Victoria,BC,,No,No,No,No,No,No
 536,Black Kettle Brewery,,https://www.blackkettlebrewing.com/,720 Copping Street – Unit 106,Canada,Vancouver,BC,Good drinking food,No,Yes,Yes,No,No,No
 401,Black rock,,,"9 Christopher st, Finsbury",England,London,,Whiskey bar,No,No,No,Yes,No,No
@@ -59,7 +58,7 @@
 284,Bob Bob Ricard,,https://www.bobbobricard.com/,1 Upper James St,England,London,,Fancy British-Russian in Art Deco interior,No,Yes,Yes,No,No,No
 233,Boogie's Burgers,,http://boogiesburgers.com/,908 Edmonton Trail NE,Canada,Calgary,AB,,No,No,No,No,No,No
 239,Bookers,,https://bookersbbq.com/,316 3 St SE,Canada,Calgary,AB,Meat. All the meat.,No,No,Yes,No,No,No
-565,Boom and Batten,"Belly up to the Bar, Dining out in Style",https://boomandbatten.com/,2 Paul Kane Pl,Canada,Victoria,BC,"Great cocktails, fancy but great value locally-sourced food",No,No,No,No,No,No
+565,Boom and Batten,"Belly up to the Bar, Dining out in Style, Local Specialities",https://boomandbatten.com/,2 Paul Kane Pl,Canada,Victoria,BC,"Great cocktails, fancy but great value locally-sourced food",No,No,No,No,No,No
 388,Borpatika,,,"Bertalan Lajos u. 26, 1111",Hungary,Budapest,,A neighbourhood 'pharmacy bar' with an amazing Pogácsa pastry,No,No,No,Yes,No,No
 395,Boutiq Bar,,,"Paulay Ede u. 5, 1061",Hungary,Budapest,,Ed's favourite cocktail place,No,No,No,Yes,No,No
 35,Brasserie L'Ecole,"Burgerz & Friez, Dining out in Style, Greatest Hits",http://www.lecole.ca/,1715 Government St,Canada,Victoria,BC,Classic French food. They do not take reservations so be prepared to line up right at 5pm,No,No,Yes,Yes,No,No
@@ -101,7 +100,7 @@
 310,Chez Elles Bistroquet,,http://www.chezellesbistroquet.co.uk/,"45 Brick Ln, Spitalfields",England,London,,,No,No,No,No,No,No
 412,Chickpea Restaurant,,,4298 Main St,Canada,Vancouver,BC,Scout Mag says get the sabich platter,No,Yes,Yes,No,No,No
 514,Chocolat Flavoris,Sweet Snacks,,1010 Government St,Canada,Victoria,BC,Dipped soft serve in the flavour of your choice,No,No,No,No,No,No
-5,Chorizo & Co,Foodie Fort Lunch Crawl,,807 Fort St,Canada,Victoria,BC,,No,No,No,No,No,No
+5,Chorizo & Co,,,807 Fort St,Canada,Victoria,BC,,No,No,No,No,No,No
 107,Chuck norris,,https://m.facebook.com/chucknorrisgrill,"Laugavegur 30, 101",Iceland,Reykjavik,Reykjavik,,No,No,No,No,No,No
 55,Chuck's Burger Bar,,http://chucksburgerbar.com,2031 Malaview Ave W,Canada,Sidney,BC,Excellent burgers,No,Yes,Yes,Yes,No,No
 494,Chun Wah Kam,,,537 Pensacola St,USA,Honolulu,Hawaii,MANAPUA steam buns,Yes,Yes,No,No,No,No
@@ -120,23 +119,23 @@
 402,Connaught hotel bar,,,"Connaught Bar Connaught, Carlos Pl, Mayfair",England,London,,Recommended by the bartender at the Savoy,No,No,No,Yes,No,No
 535,Coo Coo Coffee,,,477 Davie st,Canada,Vancouver,BC,,Yes,Yes,No,No,Yes,Yes
 175,Craft Beer Market Downtown,,http://www.craftbeermarket.ca/calgary/downtown#,345 10 AVE SW,Canada,Calgary,AB,,No,No,No,No,No,No
-62,Crust Bakery,"Foodie Fort Lunch Crawl, Sweet Snacks",http://www.crustbakery.ca/,730 Fort st,Canada,Victoria,BC,Delicious treats,No,Yes,No,No,No,No
+62,Crust Bakery,Sweet Snacks,http://www.crustbakery.ca/,730 Fort st,Canada,Victoria,BC,Delicious treats,No,Yes,No,No,No,No
 356,ČSA Bar,,http://www.csa-bar.de/,Karl-Marx-Allee 96,Germany,Berlin,Brandenburg,Vintage 60s vibes in this old Czech national airline offices building,No,No,No,Yes,No,No
 407,Csendes Vintage bar,,,"Ferenczy István u. 5, 1053",Hungary,Budapest,,Quieter ruin pub. Cash only.,No,No,No,Yes,No,No
 539,Dalina,,https://dalina.ca/,687 Main Street,Canada,Vancouver,BC,Quirky brunch and affordable to-go options,Yes,Yes,No,No,Yes,Yes
 261,Dandy Brewing,,,,Canada,Calgary,AB,,No,No,No,No,No,No
 90,Darcy's Pub,Craft Draught Beer,http://darcyspub.ca/downtown/,1127 Wharf St,Canada,Victoria,BC,Casual pub with frequent live music,No,Yes,Yes,Yes,No,No
 430,Dave's Hot Chicken,,https://www.daveshotchicken.com/,970 N Western Ave,USA,Los Angeles,California,Nashville Hot Chicken,No,Yes,Yes,No,No,No
-65,DeadBeetz Food Truck,Greatest Hits,,Behind the museum,Canada,Victoria,BC,Food truck with the best burger in town,No,Yes,Yes,No,No,No
-508,Deadbeetz Restaurant,Vegetarian,https://www.deadbeetz.com/,1950 D Oak Bay Ave,Canada,Victoria,BC,"The only burger we crave. All the comfort of McDs with high quality, local ingredients",No,No,Yes,No,No,No
+65,DeadBeetz Food Truck,"Burgerz & Friez, Greatest Hits",,Behind the museum,Canada,Victoria,BC,Food truck with the best burger in town,No,Yes,Yes,No,No,No
+508,Deadbeetz Restaurant,"Burgerz & Friez, Vegetarian",https://www.deadbeetz.com/,1950 D Oak Bay Ave,Canada,Victoria,BC,"The only burger we crave. All the comfort of McDs with high quality, local ingredients",No,No,Yes,No,No,No
 200,Diablito Cha Cha Cha,,http://diablitochachacha.com/,Calle Flamingo SN,Mexico,Playa del Carmen,Quintana Roo,,No,No,No,No,No,No
 155,Dill,,https://www.google.ca/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwiz1czOlODWAhUD4WMKHaFZBI4QFggnMAA&url=https%3A%2F%2Fdillrestaurant.is%2F&usg=AOvVaw0bXyUUg4PXAlFks1Ij8dmB,Hverfisgata 12,Iceland,Reykjavik,Reykjavik,,No,No,No,No,No,No
 172,Diner Deluxe,,http://www.dinerdeluxe.com/,104 - 350 ASPEN GLEN LANDING SW,Canada,Calgary,AB,,No,No,No,No,No,No
 80,Dinesty Dumpling House,,,3779 Sexsmith Rd,Canada,Richmond,BC,,No,No,No,No,No,No
 422,Dinesty Dumplings,,,"1719 Robson Street,",Canada,Vancouver,BC,,No,Yes,Yes,No,No,No
 192,Dirty Martini Lounge,,https://www.facebook.com/dirtymartinilounge/,Calle 10 Nte,Mexico,Playa del Carmen,Quintana Roo,,No,No,No,No,No,No
-519,Discovery Coffee Oak Bay,Caffeine Fix,https://discoverycoffee.com/pages/locations,1964 Oak Bay Avenue,Canada,Victoria,BC,Great espresso based drinks,No,No,No,No,Yes,Yes
-18,Discovery on Blanshard,Caffeine Fix,http://www.discovery.ca/,1001 Blanshard St,Canada,Victoria,BC,Always a solid cup of coffee with amazing doughnuts,No,No,No,No,Yes,Yes
+519,Discovery Coffee Oak Bay,,https://discoverycoffee.com/pages/locations,1964 Oak Bay Avenue,Canada,Victoria,BC,Great espresso based drinks,No,No,No,No,Yes,Yes
+18,Discovery on Blanshard,,http://www.discovery.ca/,1001 Blanshard St,Canada,Victoria,BC,Always a solid cup of coffee with amazing doughnuts,No,No,No,No,Yes,Yes
 292,Dishoom,,http://www.dishoom.com/,12 Upper St Martin's Ln,England,London,,Bombay style Indian,Yes,Yes,Yes,No,No,No
 444,Docking Bay 7,,https://allears.net/dlr/dining/menu/docking-bay-7-food-and-cargo-dl/lunch-dinner/,Star Wars Land,USA,Disneyland,California,Midrange lunch and dinner options,No,Yes,Yes,No,No,No
 564,Doner Stop,,https://www.donerstop.ca/,980 Granville St,Canada,Vancouver,BC,Berlin-style kebab,No,Yes,Yes,No,No,No
@@ -163,8 +162,8 @@
 421,Farmer's Apprentice,,,1535 6th W Ave,Canada,Vancouver,BC,Slow Food approved local food,Yes,Yes,Yes,No,No,No
 455,Farmer's Apprentice,,,,Canada,Vancouver,BC,,No,No,No,No,No,No
 209,Fenix Lounge Isla Mujeres,,," Av Rueda Medina 78, Centro, 77400 Isla Mujeres",Mexico,Cancun,Quintana Roo,Amazing sunset views from the bar,No,No,No,Yes,No,No
-248,Fernwood Inn,Foodie Fernwood,http://fernwoodinn.com/,1302 Gladstone Ave,Canada,Victoria,BC,Midrange pub food,No,Yes,Yes,Yes,No,No
-3,Ferris' Oyster Bar,"Burgerz & Friez, Greatest Hits, Seafood",http://www.ferrisoysterbar.com,536 Yates st,Canada,Victoria,BC,Something for everyone at reasonable prices,No,Yes,Yes,Yes,No,No
+248,Fernwood Inn,,http://fernwoodinn.com/,1302 Gladstone Ave,Canada,Victoria,BC,Midrange pub food,No,Yes,Yes,Yes,No,No
+3,Ferris' Oyster Bar,"Burgerz & Friez, Greatest Hits, Local Specialities, Seafood",http://www.ferrisoysterbar.com,536 Yates st,Canada,Victoria,BC,Something for everyone at reasonable prices,No,Yes,Yes,Yes,No,No
 6,Fish Hook,"Greatest Hits, Seafood",http://www.fishhookvic.com/,805 Fort St,Canada,Victoria,BC,"A modern, fun take on seafood",No,Yes,Yes,No,No,No
 113,Fiskfelagid,,http://www.fiskfelagid.is/,"Vesturgötu 2a, Grófartorg ",Iceland,Reykjavik,,,No,No,No,No,No,No
 111,Fjorukrain,,http://fjorukrain.is/,"Strandgata, Hafnarfjörður",Iceland,Reykjavik,,,No,No,No,No,No,No
@@ -196,7 +195,7 @@
 334,Gyubee Japanese Grill,,https://www.gyubeejapanesegrill.com/,335 Bloor Street W Toronto,Canada,Toronto,ON,All you can eat Japanese/Korean BBQ,No,Yes,Yes,No,No,No
 319,Gyugyuya,,https://www.gyugyuya.com/,177 Dundas St W,Canada,Toronto,ON,Japanese curry,No,Yes,Yes,No,No,No
 145,Habibi,,,Hafnarstraeti 18,Iceland,Reykjavik,Reykjavik,,No,No,No,No,No,No
-31,Habit Coffee,Caffeine Fix,https://habitcoffee.com/,808 Yates St,Canada,Victoria,BC,Serious coffee. No wifi,No,No,No,No,Yes,Yes
+31,Habit Coffee,,https://habitcoffee.com/,808 Yates St,Canada,Victoria,BC,Serious coffee. No wifi,No,No,No,No,Yes,Yes
 213,Hacienda Sisal,,http://www.haciendasisal.com/es/menu-restaurante-en-cancun.php,"km 13.5, Blvd. Kukulcan, Zona Hotelera",Mexico,Cancun,Quintana Roo,,No,No,No,No,No,No
 426,Hail Mary's,,,670 E Broadway,Canada,Vancouver,BC,Kitchy good and evil decor,No,No,No,Yes,No,No
 101,Halibut House,,,,Canada,Victoria,BC,,No,No,No,No,No,No
@@ -207,7 +206,7 @@
 347,Heidel Peters,,,,Germany,Berlin,Brandenburg,,No,No,No,Yes,No,No
 490,Helena's Hawaiian Food,,,1240 N School St,USA,Honolulu,Hawaii,Famous for its casual Hawaiian-Chinese classics,Yes,Yes,Yes,No,No,No
 423,Heritage Asian Eatery,,,382 W Broadway,Canada,Vancouver,BC,,No,Yes,Yes,No,No,No
-20,Hey Happy,"Caffeine Fix, Greatest Hits",http://www.heyhappycoffee.com/,#122 560 Johnson St,Canada,Victoria,BC,Excellent coffee and lovely people,No,No,No,No,Yes,Yes
+20,Hey Happy,Greatest Hits,http://www.heyhappycoffee.com/,#122 560 Johnson St,Canada,Victoria,BC,Excellent coffee and lovely people,No,No,No,No,Yes,Yes
 545,Highway Inn,,https://www.myhighwayinn.com/,680 Ala Moana Blvd #105,USA,Honolulu,Hawaii,"Hawaiian style breakfast, lunch and dinner",Yes,Yes,Yes,No,No,No
 390,Hisar Fresh food,,,Yorckstraße 49,Germany,Berlin,Brandenburg,Get the beef not the chicken,No,Yes,Yes,No,No,No
 108,Hofnin,,http://www.hofnin.is/,GEIRSGATA 7C,Iceland,Reykjavik,,,No,No,No,No,No,No
@@ -232,7 +231,7 @@
 377,Isarn,,,119 Upper Street,England,London,,Contemporary Thai,No,Yes,Yes,No,No,No
 238,Island Poké,Seafood,https://www.facebook.com/IslandPokeCA/,1674 Douglas St,Canada,Victoria,BC,Sushi bowls and sushi burritos,No,Yes,Yes,No,No,No
 499,Island Vintage Coffee,,,2301 Kalakaua Ave,USA,Honolulu,Hawaii,Coffee and breakfast bowls,Yes,No,No,No,Yes,Yes
-22,Italian Deli,Foodie Fort Lunch Crawl,http://www.italianfoodimports.ca/,1114 Blanshard St,Canada,Victoria,BC,The best deal for sandwiches in the city,No,Yes,No,No,No,No
+22,Italian Deli,,http://www.italianfoodimports.ca/,1114 Blanshard St,Canada,Victoria,BC,The best deal for sandwiches in the city,No,Yes,No,No,No,No
 10,Jam,Brunch for Days,http://www.jamcafevictoria.com,542 Herald St.,Canada,Victoria,BC,Epic southern-style brunch with big lines on the weekends,Yes,Yes,No,No,Yes,No
 400,Jederman,,,"Ráday u. 58, 1092",Hungary,Budapest,,,No,Yes,Yes,No,No,No
 236,Jin,,,,Canada,Calgary,AB,,No,No,No,No,No,No
@@ -254,7 +253,7 @@
 556,Koko Head Cafe,,http://kokoheadcafe.com/brunch-all-day/,1145c 12th Ave,USA,Honolulu,Hawaii,All day breakfast and dumplings,Yes,Yes,No,No,No,No
 497,Kona Coffee Purveyors,,," Kuhio Avenue Mall Entrance - International Marketplace, 2330 Kalakaua Ave #160",USA,Honolulu,Hawaii,Upscale,Yes,No,No,No,Yes,Yes
 397,Konyha,,,"Madách Imre út 8, 1075",Hungary,Budapest,,Ed recommended,No,Yes,Yes,No,No,No
-92,Koto Sushi,"Foodie Fort Lunch Crawl, Seafood",http://kotosushivictoria.ca,510 Fort St.,Canada,Victoria,BC,,No,No,No,No,No,No
+92,Koto Sushi,Seafood,http://kotosushivictoria.ca,510 Fort St.,Canada,Victoria,BC,,No,No,No,No,No,No
 299,Koya Soho,,https://www.koya.co.uk/,50 Frith St,England,London,,Udon,Yes,Yes,Yes,No,No,No
 399,Kozpoint,,,"Madách Imre út 5, 1075",Hungary,Budapest,,Casual food on the cafe side,Yes,Yes,No,No,Yes,Yes
 144,Krua Thai Express,,http://kruathai.is,Skólavörðustígur 21,Iceland,Reykjavik,Reykjavik,,No,No,No,No,No,No
@@ -274,7 +273,7 @@
 469,La Negrita,,,"Calle 62x 49, 415, Centro",Mexico,Merida,Yucatan,"Gorgeous open garden, large drinks, authentic botanas. Can get busy",No,Yes,Yes,Yes,No,No
 195,La Perla Pixan and Mezcal Shop,,https://facebook.com/Laperlapixan,Calle 34 Norte Entre 5ta Y 10,Mexico,Playa del Carmen,Quintana Roo,"Serves a unique Mexican spirit, Pulque",No,No,Yes,Yes,No,No
 485,La Prospe del Xtup,,,"Calle 59 530, Parque Santiago, Centro",Mexico,Merida,Yucatan,,No,No,Yes,No,No,No
-29,La Taqueria,"Cheap Eats, Foodie Fort Lunch Crawl, Taco Party",http://www.lataqueria.com/,766 Fort St,Canada,Victoria,BC,Traditional Mexican street food tacos,No,Yes,Yes,No,No,No
+29,La Taqueria,"Cheap Eats, Taco Party",http://www.lataqueria.com/,766 Fort St,Canada,Victoria,BC,Traditional Mexican street food tacos,No,Yes,Yes,No,No,No
 28,La Taquisa,Taco Party,http://www.lataquisa.com/,1017 Blanshard St,Canada,Victoria,BC,Baja style tacos and burritos,No,Yes,Yes,No,No,No
 246,La Tortilla Mexicana,Taco Party,http://latortilla.ca/,1205 Quadra St,Canada,Victoria,BC,Zijuatenejo style cuisine,Yes,Yes,Yes,No,No,No
 465,Lamplight Lounge,,https://disneyland.disney.go.com/en-ca/dining/disney-california-adventure/lamplight-lounge/menus/lounge/,"Pixar Pier, 1313 Disneyland Dr",USA,Disneyland,California,Great looking cocktail menu,Yes,Yes,Yes,Yes,No,No
@@ -285,7 +284,7 @@
 501,Leonard's Bakery,,,933 KAPAHULU AVE,USA,Honolulu,Hawaii,Masaladas - portugese donuts,No,No,No,No,No,No
 373,Life Goodness,,,"First Floor, Kingly Court",England,London,,Locally sourced Greek,No,Yes,Yes,No,No,No
 360,Lisboa Bar am Boxi,,,Krossener Strasse 20,Germany,Berlin,Brandenburg,Portuguese style tapas,No,No,Yes,Yes,No,No
-249,Little June,Caffeine Fix,,1301 Gladstone Ave,Canada,Victoria,BC,A cute little cafe with awesome food options,Yes,Yes,Yes,Yes,Yes,Yes
+249,Little June,,,1301 Gladstone Ave,Canada,Victoria,BC,A cute little cafe with awesome food options,Yes,Yes,Yes,Yes,Yes,Yes
 382,Little Viet Kitchen,,,2 Chapel Market The Angel,England,London,,Modern Vietnamese,No,No,Yes,No,No,No
 530,Local,,https://localpubliceatery.com/neighbourhoods/gastown/menu/,3 ALEXANDER ST,Canada,Vancouver,BC,Casual food with a tex mex flair,No,Yes,Yes,Yes,No,No
 327,Loga's Corner,,,216 Close Ave,Canada,Toronto,ON,Great dumplings at a great price,No,Yes,Yes,No,No,No
@@ -315,7 +314,7 @@
 303,Marksman Public House,,https://www.marksmanpublichouse.com/,254 Hackney Rd,England,London,,Vintage modern pub food,No,Yes,Yes,No,No,No
 500,Marukame Udon,,,2310 Kūhiō Ave,USA,Honolulu,Hawaii,Cheap and delicious freshly made udon,No,Yes,Yes,No,No,No
 156,Matur og Drykkur,,http://maturogdrykkur.is/is/,Grandagarður 2,Iceland,Reykjavik,Reykjavik,,No,No,No,No,No,No
-93,Menbow Ramen,Foodie Fort Lunch Crawl,,1018 Blanshard St,Canada,Victoria,BC,The closest thing downtown Victoria has to great Ramen,No,Yes,Yes,No,No,No
+93,Menbow Ramen,,,1018 Blanshard St,Canada,Victoria,BC,The closest thing downtown Victoria has to great Ramen,No,Yes,Yes,No,No,No
 235,Menyatai Japanese Noodles,,https://www.facebook.com/Menyatai-Japanese-Noodle-House-652806014755534/,24 12 St NW,Canada,Calgary,AB,,No,No,No,No,No,No
 475,Mercado 60,,,"Calle 60 461, Parque Santa Lucia, Centro",Mexico,Merida,Yucatan,"A food cart collective, slightly higher prices than some locations",No,No,Yes,No,No,No
 247,Mesa Familiar,Taco Party,https://www.facebook.com/mesafamiliar/photos/tonight's-menu-/355303831521616/,1296 Gladstone Ave,Canada,Victoria,BC,Authentic Mexican,No,No,Yes,No,No,No
@@ -341,8 +340,8 @@
 8,Nautical Nellies,Seafood,http://nauticalnelliesrestaurant.com/,1001 Wharf St,Canada,Victoria,BC,A bit kitschy but probably what you were expecting to get for seafood in Victoria,No,Yes,Yes,Yes,No,No
 146,Nonnabiti,,,Hafnarstræti 9,Iceland,Reykjavik,Reykjavik,,No,No,No,No,No,No
 141,Noodle Station,,http://noodlestation.is/,Laugavegur 103,Iceland,Reykjavik,Reykjavik,,No,No,No,No,No,No
-97,Nourish,"Brunch for Days, Vegetarian",http://www.nourishkitchen.ca/,225 Quebec St,Canada,Victoria,BC,Lots of gluten free and vegan options in a funky decor,No,Yes,Yes,No,Yes,Yes
-256,Nowhere,Greatest Hits,http://nowherearestaurant.com/,"#g4 1001, Douglas St",Canada,Victoria,BC,Locally-sourced creative dishes you won't find anywhere else in town,No,No,Yes,Yes,No,No
+97,Nourish,"Brunch for Days, Local Specialities, Vegetarian",http://www.nourishkitchen.ca/,225 Quebec St,Canada,Victoria,BC,Lots of gluten free and vegan options in a funky decor,No,Yes,Yes,No,Yes,Yes
+256,Nowhere,"Greatest Hits, Local Specialities",http://nowherearestaurant.com/,"#g4 1001, Douglas St",Canada,Victoria,BC,Locally-sourced creative dishes you won't find anywhere else in town,No,No,Yes,Yes,No,No
 420,Nuba,,,146 East 3rd Avenue,Canada,Vancouver,BC,Really well reviewed lebanese food,No,Yes,Yes,No,No,No
 191,Nuestra Senora De Carmen Mercado De Playa,,,10 Avenida Norte,Mexico,Playa del Carmen,Quintana Roo,,No,No,No,No,No,No
 445,Oga's Cantina,,https://allears.net/dlr/dining/menu/ogas-cantina-dl/lounge/,Star Wars Land,USA,Disneyland,California,Themed cocktails,No,No,No,Yes,No,No
@@ -351,7 +350,7 @@
 316,ONO Poke Bar,,https://onopokebar.com/,100 Western Battery Rd #2,Canada,Toronto,ON,,No,Yes,Yes,No,No,No
 489,Ono Seafood,,,"747 Kapahulu Ave., Apt 4",USA,Honolulu,Hawaii,Cheap and plentiful poke,No,Yes,No,No,No,No
 138,Ostabudin,,http://ostabudin.is/,Skolavordustigur,,Reykjavik,Reykjavik,,No,No,No,No,No,No
-520,Ottavio,Oak Bay,https://ottaviovictoria.com/,2272 Oak Bay Ave,Canada,Victoria,BC,"Italian deli with cheeses, meats and to-go items",No,Yes,No,No,No,No
+520,Ottavio,,https://ottaviovictoria.com/,2272 Oak Bay Ave,Canada,Victoria,BC,"Italian deli with cheeses, meats and to-go items",No,Yes,No,No,No,No
 169,Pagliacci's,Greatest Hits,http://www.pagliaccis.ca,1011 Broad St,Canada,Victoria,BC,,No,No,No,No,No,No
 566,Parachute Ice Cream,Sweet Snacks,https://www.parachuteicecream.com/,105-2626 Bridge St,Canada,Victoria,BC,Delicious ice cream,No,No,No,No,No,Yes
 449,Paradise Garden Grill,,https://allears.net/dlr/dining/menu/paradise-garden-grill/lunch-dinner/,Pixar Pier,USA,Disneyland,California,Tex Mex Food,No,Yes,Yes,No,No,No
@@ -364,8 +363,8 @@
 358,Pavillon im Volkspark,,http://www.pavillon-berlin.de/,Friedenstrasse 101,Germany,Berlin,Brandenburg,Beer garden in the middle of a park,Yes,Yes,No,Yes,No,No
 452,Peaceful Noodle,,http://www.peacefulrestaurant.com/,532 W Broadway #110,Canada,Vancouver,BC,Beef roll and dandan,No,Yes,Yes,No,No,No
 83,Pepper Lunch,,,5951 No 3 Rd #150,Canada,Richmond,BC,,No,No,No,No,No,No
-94,Pho Nay,Foodie Fort Lunch Crawl,http://phonay.com,1012 Blanshard St,Canada,Victoria,BC,,No,No,No,No,No,No
-7,Pho Vy,Foodie Fort Lunch Crawl,,772 Fort St,Canada,Victoria,BC,Great pho,No,Yes,Yes,No,No,No
+94,Pho Nay,,http://phonay.com,1012 Blanshard St,Canada,Victoria,BC,,No,No,No,No,No,No
+7,Pho Vy,,,772 Fort St,Canada,Victoria,BC,Great pho,No,Yes,Yes,No,No,No
 493,Pig and Lady,,,83 N. King St,USA,Honolulu,Hawaii,Modern Vietnamese,No,Yes,Yes,No,No,No
 286,Ping Pong Bow Bells House,,https://www.pingpongdimsum.com/,"Bow Bells House, 1 Bread St",England,London,,Dim sum,No,Yes,Yes,No,No,No
 50,Pink Bicycle,Burgerz & Friez,http://www.pinkbicycleburger.com,1008 Blanshard St.,Canada,Victoria,BC,Burgers and fry options galore,No,Yes,Yes,No,No,No
@@ -436,7 +435,7 @@
 12,Shine Cafe on Blanshard,Brunch for Days,http://www.shinecafe.ca/,1320 Blanshard St,Canada,Victoria,BC,Amazing eggs benny,Yes,Yes,No,No,No,No
 43,Shirley Delicious,,,"2794 Sheringham Point Rd, Shirley",Canada,Sooke,BC,A west-coast casual cafe,Yes,Yes,No,No,Yes,Yes
 293,Shuang Shuang,,http://www.shuangshuang.co.uk/,"1st floor of, 64 Shaftesbury Ave",England,London,,Hot pot,No,Yes,Yes,No,No,No
-91,Siam Thai,Foodie Fort Lunch Crawl,http://www.siam-thai-victoria.com/,512 Fort St,Canada,Victoria,BC,Old school Thai restaurant,No,Yes,Yes,No,No,No
+91,Siam Thai,,http://www.siam-thai-victoria.com/,512 Fort St,Canada,Victoria,BC,Old school Thai restaurant,No,Yes,Yes,No,No,No
 243,Sidewalk Citizen,,,618 Confluence Way SE,Canada,Calgary,AB,Casual lunch counter with a variety of options,No,Yes,No,No,No,No
 89,Silkway Halal,,,8188 Saba Rd #110,Canada,Richmond,BC,,No,No,No,No,No,No
 353,Silo Coffee,,http://www.facebook.com/silocoffee,Gabriel-Max-Strasse 4,Germany,Berlin,Brandenburg,Australian coffee culture,Yes,Yes,No,No,Yes,Yes
@@ -451,9 +450,9 @@
 68,Sooke Harbour House,,http://sookeharbourhouse.com/,1528 Whiffen Spit Road,Canada,Sooke,BC,,No,No,No,No,No,No
 357,Spätzle and Knödel,,,Wühlischstrasse 20,Germany,Berlin,Brandenburg,Southern german comfort food,No,No,Yes,No,No,No
 224,Spicy Hut,,http://www3.telus.net/spicyhut/products.htm,203 4 St NE,Canada,Calgary,AB,,No,No,No,No,No,No
-57,Spinnakers Brewpub,Craft Draught Beer,http://www.spinnakers.com/,308 Catherine Street,Canada,Victoria,BC,Victoria's oldest surviving brewpub,No,Yes,Yes,Yes,No,No
+57,Spinnakers Brewpub,"Craft Draught Beer, Local Specialities",http://www.spinnakers.com/,308 Catherine Street,Canada,Victoria,BC,Victoria's oldest surviving brewpub,No,Yes,Yes,Yes,No,No
 346,St Lawrence Market,,http://www.stlawrencemarket.com/,93 Front St E,Canada,Toronto,ON,Food market with trendy food,No,Yes,Yes,No,No,No
-509,Stage,"Belly up to the Bar, Foodie Fernwood",,1307 Gladstone Ave,Canada,Victoria,BC,"Excellent wine selection, small plates, incredible meals",No,No,Yes,Yes,No,No
+509,Stage,Belly up to the Bar,,1307 Gladstone Ave,Canada,Victoria,BC,"Excellent wine selection, small plates, incredible meals",No,No,Yes,Yes,No,No
 389,Steamhouse Cafe,,,Batthyány tér 5 1st floor,Hungary,Budapest,,All day breakfast with great coffee in the Market Hall,Yes,No,No,No,Yes,Yes
 44,Stick in the Mud Coffee,,http://stickinthemud.ca/,6715 Eustace Rd,Canada,Sooke,BC,Coffee roasted right in Sooke by passionate people,No,No,No,No,Yes,Yes
 153,Sufistiin,,,Laugavegi 18,Iceland,Reykjavik,Reykjavik,,No,No,No,No,No,No
@@ -479,13 +478,13 @@
 281,The Blind Pig in the Social Eating House,,http://www.socialeatinghouse.com/,58 Poland St,England,London,,Cocktail menu inspired by children's literature,No,No,No,Yes,No,No
 305,The Booking Office,,https://www.the-booking-office.com/our-menus,"St. Pancras Renaissance Hotel, Euston Rd, Kings Cross",England,London,,Bar in a former ticket office in St Pancras station,No,No,No,Yes,No,No
 17,The Churchill,Craft Draught Beer,https://thechurchill.ca/,1140 Government St,Canada,Victoria,BC,A dark pub with a huge beer and cocktail menu,No,Yes,Yes,Yes,No,No
-15,The Drake,"Craft Draught Beer, Gluten Free Friendly, Greatest Hits",http://drakeeatery.com/,517 Pandora Ave,Canada,Victoria,BC,The best beer selection in town,No,No,No,Yes,No,No
+15,The Drake,"Craft Draught Beer, Gluten-free Friendly, Greatest Hits",http://drakeeatery.com/,517 Pandora Ave,Canada,Victoria,BC,The best beer selection in town,No,No,No,Yes,No,No
 63,The Dutch Bakery,Sweet Snacks,https://thedutchbakery.com/,718 Fort St,Canada,Victoria,BC,Old school treats,No,Yes,No,No,No,No
 275,The Heron Bar and Restaurant,,https://www.theheronpaddington.com/,Norfolk Cres,England,London,,Thai restaurant with a nice patio,No,Yes,Yes,No,No,No
 276,The India Club,,https://www.theindiaclub.co.uk/,143 Strand,England,London,,Hotel bar with well-respected Indian menu,No,Yes,Yes,Yes,No,No
 289,The Ivy,,https://www.the-ivy.co.uk/,1-5 West St,England,London,,Modern British in an art deco setting,No,Yes,Yes,Yes,No,No
 78,The Jade Seafood,,,8511 Alexandra Rd,Canada,Richmond,BC,,No,No,No,No,No,No
-48,The Joint,Gluten Free Friendly,https://thejointvictoria.com/,1219 Wharf St,Canada,Victoria,BC,Pizza with gluten-free options,No,Yes,Yes,No,No,No
+48,The Joint,Gluten-free Friendly,https://thejointvictoria.com/,1219 Wharf St,Canada,Victoria,BC,Pizza with gluten-free options,No,Yes,Yes,No,No,No
 277,The Kati Roll Company,,https://www.thekatirollcompany.com/,24 Poland St,England,London,,Indian flatbread wraps,No,Yes,Yes,No,No,No
 272,The Laughing Heart,,http://thelaughingheartlondon.com/,277 Hackney Rd,England,London,,European small plates and wine,No,No,Yes,Yes,No,No
 119,The Laundromat Cafe,,http://www.thelaundromatcafe.com/en/home,Austurstræti 9,Iceland,Reykjavik,,,No,No,No,No,No,No
@@ -522,7 +521,7 @@
 548,Waiola Shave Ice,,,"2135 Waiola St, Honolulu",USA,Honolulu,Hawaii,,No,Yes,Yes,No,No,No
 472,Wayan´e,,,"412, Calle 59 408, Centro",Mexico,Merida,Yucatan,Cheap tacos,Yes,Yes,No,No,No,No
 405,Wein Salon,,," Schreinerstraße 59, 10247 ",Germany,Berlin,Brandenburg,Wine in a retro East Berlin atmosphere,No,No,No,Yes,No,No
-517,Whole Beast & Butcher,Oak Bay,http://www.thewholebeast.ca/,2032 Oak Bay Ave,Canada,Victoria,BC,Local meats and cured deliciousness,No,No,No,No,No,No
+517,Whole Beast & Butcher,Local Specialities,http://www.thewholebeast.ca/,2032 Oak Bay Ave,Canada,Victoria,BC,Local meats and cured deliciousness,No,No,No,No,No,No
 337,Wilbur Mexicana,,http://wilburmexicana.com/,552 King Street West,Canada,Toronto,ON,Highly recommended Mexican,No,Yes,Yes,No,No,No
 42,Wild Mountain,,http://www.wildmountaindinners.com/,1831 Maple Avenue South,Canada,Sooke,BC,"Delicious, unpretentious and locally sourced",No,No,Yes,Yes,No,No
 428,Winchell's Donuts,,https://www.winchells.com,716 N Western Ave,USA,Los Angeles,California,Donuts that come 14 to a dozen,No,No,No,No,Yes,Yes

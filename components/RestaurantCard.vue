@@ -67,16 +67,12 @@ export default {
         myTypes.includes(value)
       );
 
-      if (
-        (this.currentItinerary != "All" || !this.currentItinerary) &&
-        split != ""
-      ) {
-        filteredArray = filteredArray.filter(value =>
-          split.includes(this.currentItinerary)
-        );
-      }
+      let itineraryMatch =
+        this.currentItinerary != "All" && split.includes(this.currentItinerary)
+          ? true
+          : false;
 
-      return filteredArray.length > 0;
+      return filteredArray.length > 0 && itineraryMatch;
     },
     searchLink() {
       return `https://www.google.com/maps/search/${this.restaurant.address} ${this.restaurant.city} ${this.restaurant.region} ${this.restaurant.country}`;
