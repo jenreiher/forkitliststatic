@@ -68,7 +68,7 @@ export default {
       );
 
       let itineraryMatch =
-        this.currentItinerary != "All" && split.includes(this.currentItinerary)
+        this.currentItinerary === "All" || split.includes(this.currentItinerary)
           ? true
           : false;
 
