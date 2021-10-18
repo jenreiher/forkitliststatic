@@ -13,14 +13,14 @@
     ElMain
       h2.subtitle
         | Read to fork it all?
-      ElSelect(v-if="itineraries[currentCity] && itineraries[currentCity].length > 0" v-model="currentItinerary" placeholder="All" class="u-mt--10")
+      ElSelect(v-if="alphaItineraries && alphaItineraries.length > 0" v-model="currentItinerary" class="u-mt--10")
         ElOption(
           key="all"
           label="All Restaurants"
           value="All"
         )
         ElOption(
-          v-for="item in itineraries[currentCity]"
+          v-for="item in alphaItineraries"
           :key="item"
           :label="item"
           :value="item"
@@ -82,12 +82,15 @@ export default {
 
         let split =
           restaurant.itineraries.split(",") != ""
-            ? restaurant.itineraries.split(",")
+            ? restaurant.itineraries.split(",").map(function(item) {
+                return item.trim();
+              })
             : [];
 
         cities.includes(restaurant.city) ? null : cities.push(restaurant.city);
 
         split.forEach(item => {
+          itineraries[restaurant.city] &&
           itinerary[restaurant.city] &&
           (itinerary[restaurant.city].includes(item) ||
             itineraries[restaurant.city].includes(item))
@@ -110,6 +113,15 @@ export default {
 
       return;
     });
+  },
+  computed: {
+    alphaItineraries() {
+      const data = this.itineraries[this.currentCity]
+        ? this.itineraries[this.currentCity].sort((a, b) => a.localeCompare(b))
+        : null;
+
+      return data;
+    }
   },
   methods: {
     async fetchData() {

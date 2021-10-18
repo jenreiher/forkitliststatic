@@ -59,14 +59,15 @@ export default {
       this.restaurant.snacks === "Yes" ? myTypes.push("snacks") : null;
 
       let filteredArray = [];
-      const split = this.restaurant.itineraries.split(",");
+      const split = this.restaurant.itineraries.split(",").map(function(item) {
+        return item.trim();
+      });
 
       filteredArray = this.selectedTypes.filter(value =>
         myTypes.includes(value)
       );
 
-      if (this.currentItinerary != "All") {
-        console.log(this.currentItinerary);
+      if (this.currentItinerary != "All" && split != "") {
         filteredArray = filteredArray.filter(value =>
           split.includes(this.currentItinerary)
         );
