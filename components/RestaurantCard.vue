@@ -67,7 +67,10 @@ export default {
         myTypes.includes(value)
       );
 
-      if (this.currentItinerary != "All" && split != "") {
+      if (
+        (this.currentItinerary != "All" || !this.currentItinerary) &&
+        split != ""
+      ) {
         filteredArray = filteredArray.filter(value =>
           split.includes(this.currentItinerary)
         );

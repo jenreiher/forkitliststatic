@@ -5,7 +5,7 @@
         |ForkItList
       
       .header__navigation
-        .header__cities
+        navigation.header__cities
           template(v-for="(city) in cities")
             button(:class="{ 'header__cities--active': city === currentCity }" @click="setCurrentCity(city)")
               | {{city}}
@@ -163,6 +163,10 @@ export default {
 
 * {
   box-sizing: border-box;
+}
+
+*:focus-visible {
+  outline: 2px dotted var(--red);
 }
 
 html {
