@@ -32,7 +32,7 @@
             i(v-else class="fas fa-utensils u-mr--10")
             | {{item}}
       .types
-          ElCheckboxGroup(v-model="selectedTypes" fill="#3d2b1f" text-color="#3d2b1f")
+          ElCheckboxGroup(v-model="selectedTypes" fill="#3d2b1f" text-color="#3d2b1f" @change="updateTypes")
             template(v-for="(type) in types" class="type")
               ElCheckbox(:label="type" )
                 span.type-icon
@@ -100,6 +100,17 @@ export default {
     this.currentItinerary = this.$route.query.itinerary
       ? this.$route.query.itinerary
       : this.currentItinerary;
+
+    let queryTypes = [];
+    this.$route.query.breakfast ? queryTypes.push("breakfast") : null;
+    this.$route.query.lunch ? queryTypes.push("lunch") : null;
+    this.$route.query.dinner ? queryTypes.push("dinner") : null;
+    this.$route.query.drinks ? queryTypes.push("drinks") : null;
+    this.$route.query.coffee ? queryTypes.push("coffee") : null;
+    this.$route.query.snacks ? queryTypes.push("snacks") : null;
+
+    this.selectedTypes =
+      queryTypes.length > 0 ? queryTypes : this.selectedTypes;
 
     this.fetchData().then(res => {
       const data = res.data.body;
@@ -193,6 +204,13 @@ export default {
     },
     updateItinerary(newItinerary) {
       window.history.pushState({}, "", `?itinerary=${newItinerary}`);
+    },
+    updateTypes(newTypes) {
+      let state = "?";
+      newTypes.forEach(type => {
+        state += `${type}=true&`;
+      });
+      window.history.pushState({}, "", state);
     },
     setCurrentCity(city) {
       return (this.currentCity = city);
