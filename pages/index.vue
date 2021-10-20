@@ -39,8 +39,11 @@
                   i(:class="getIcon(type)")
                 | {{type}}
       .card-grid
-        template(v-for="(place) in filterRestaurants(currentCity)")
-          RestaurantCard(:restaurant="place" :selectedTypes="selectedTypes" :currentItinerary="currentItinerary")
+        template(v-if="filterRestaurants.length > 0" v-for="(place) in filterRestaurants")
+          RestaurantCard(:restaurant="place")
+        template(v-else)
+          ElCard
+            | Unfortuntely, have no data that matches this set of options.
     ElFooter
       
 </template>
@@ -141,18 +144,46 @@ export default {
         : null;
 
       return data;
+    },
+    filterRestaurants() {
+      const data = this.$data.restaurants
+        .filter(restaurant => {
+          return restaurant.city === this.currentCity;
+        })
+        .filter(restaurant => {
+          return (
+            (restaurant.breakfast === "Yes" &&
+              this.selectedTypes.includes("breakfast")) ||
+            (restaurant.lunch === "Yes" &&
+              this.selectedTypes.includes("lunch")) ||
+            (restaurant.dinner === "Yes" &&
+              this.selectedTypes.includes("dinner")) ||
+            (restaurant.drinnks === "Yes" &&
+              this.selectedTypes.includes("drinks")) ||
+            (restaurant.breakfast === "coffee" &&
+              this.selectedTypes.includes("coffee")) ||
+            (restaurant.snacks === "Yes" &&
+              this.selectedTypes.includes("snacks"))
+          );
+        })
+        .filter(restaurant => {
+          const split = restaurant.itineraries.split(",").map(function(item) {
+            return item.trim();
+          });
+
+          return (
+            split.includes(this.currentItinerary) ||
+            this.currentItinerary === "All"
+          );
+        });
+
+      return data;
     }
   },
   methods: {
     async fetchData() {
       const data = await this.$content("restaurants").fetch();
       return { data };
-    },
-    filterRestaurants(city) {
-      const data = this.$data.restaurants.filter(restaurant => {
-        return restaurant.city === city;
-      });
-      return data;
     },
     setCurrentCity(city) {
       return (this.currentCity = city);

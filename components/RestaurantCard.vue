@@ -1,5 +1,5 @@
 <template lang="pug">
-ElCard(v-if="displayCard" class="box-card restaurant-card" shadow="hover")
+  ElCard(class="box-card restaurant-card" shadow="hover")
     .restaurant-card__header(slot="header" class="clearfix")
         h3.restaurant-card__name(class="overflow-nicely")
             | {{restaurant.name}}
@@ -35,10 +35,6 @@ ElCard(v-if="displayCard" class="box-card restaurant-card" shadow="hover")
 <script>
 export default {
   props: {
-    currentItinerary: {
-      type: String,
-      default: ""
-    },
     restaurant: {
       type: Object,
       default: {}
@@ -49,31 +45,6 @@ export default {
     }
   },
   computed: {
-    displayCard() {
-      const myTypes = [];
-      this.restaurant.breakfast === "Yes" ? myTypes.push("breakfast") : null;
-      this.restaurant.lunch === "Yes" ? myTypes.push("lunch") : null;
-      this.restaurant.dinner === "Yes" ? myTypes.push("dinner") : null;
-      this.restaurant.drinks === "Yes" ? myTypes.push("drinks") : null;
-      this.restaurant.coffee === "Yes" ? myTypes.push("coffee") : null;
-      this.restaurant.snacks === "Yes" ? myTypes.push("snacks") : null;
-
-      let filteredArray = [];
-      const split = this.restaurant.itineraries.split(",").map(function(item) {
-        return item.trim();
-      });
-
-      filteredArray = this.selectedTypes.filter(value =>
-        myTypes.includes(value)
-      );
-
-      let itineraryMatch =
-        this.currentItinerary === "All" || split.includes(this.currentItinerary)
-          ? true
-          : false;
-
-      return filteredArray.length > 0 && itineraryMatch;
-    },
     searchLink() {
       return `https://www.google.com/maps/search/${this.restaurant.address} ${this.restaurant.city} ${this.restaurant.region} ${this.restaurant.country}`;
     },
