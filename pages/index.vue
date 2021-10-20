@@ -15,7 +15,7 @@
     ElMain
       h2.subtitle
         | Read to fork it all?
-      ElSelect(v-if="alphaItineraries && alphaItineraries.length > 0" v-model="currentItinerary" class="u-mt--10")
+      ElSelect(v-if="alphaItineraries && alphaItineraries.length > 0" v-model="currentItinerary" class="u-mt--10" @change="updateItinerary")
         ElOption(
           key="all"
           label="All Restaurants"
@@ -39,11 +39,13 @@
                   i(:class="getIcon(type)")
                 | {{type}}
       .card-grid
-        template(v-if="filterRestaurants.length > 0" v-for="(place) in filterRestaurants")
+        template(v-if="filterRestaurants.length === 0")
+          ElCard(class="empty-state")
+            i(class="fal fa-frown-open" style="font-size:8em;")
+            .empty-state__message
+              | Unfortunately, there is no data that matches this set of options. Hopefully Jen will get that sorted soon.
+        template(v-else v-for="(place) in filterRestaurants")
           RestaurantCard(:restaurant="place")
-        template(v-else)
-          ElCard
-            | Unfortuntely, have no data that matches this set of options.
     ElFooter
       
 </template>
@@ -94,6 +96,10 @@ export default {
   },
   mounted() {
     let itineraries = {};
+
+    this.currentItinerary = this.$route.query.itinerary
+      ? this.$route.query.itinerary
+      : this.currentItinerary;
 
     this.fetchData().then(res => {
       const data = res.data.body;
@@ -184,6 +190,9 @@ export default {
     async fetchData() {
       const data = await this.$content("restaurants").fetch();
       return { data };
+    },
+    updateItinerary(newItinerary) {
+      window.history.pushState({}, "", `?itinerary=${newItinerary}`);
     },
     setCurrentCity(city) {
       return (this.currentCity = city);
@@ -394,5 +403,18 @@ a {
 
 i[class*="fa-"] {
   opacity: 0.8;
+}
+
+.empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 20px;
+
+  &__message {
+    margin-top: 20px;
+  }
 }
 </style>
