@@ -177,7 +177,7 @@ export default {
               this.selectedTypes.includes("dinner")) ||
             (restaurant.drinnks === "Yes" &&
               this.selectedTypes.includes("drinks")) ||
-            (restaurant.breakfast === "coffee" &&
+            (restaurant.coffee === "Yes" &&
               this.selectedTypes.includes("coffee")) ||
             (restaurant.snacks === "Yes" &&
               this.selectedTypes.includes("snacks"))
