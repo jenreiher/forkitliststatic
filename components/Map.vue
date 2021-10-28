@@ -5,7 +5,7 @@
             ref="Map" 
             :zoom="13"
             :center="center"
-            style="height: 300px; width: 100%; margin: 30px 0;"
+            style="height: 400px; width: 100%; margin: 30px 0;"
         )
             GmapMarker(
                 :key="index"

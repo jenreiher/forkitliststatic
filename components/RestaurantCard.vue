@@ -108,7 +108,7 @@ export default {
 
 .restaurant-card__type {
   align-self: flex-end;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   i {
     color: var(--blue);
   }

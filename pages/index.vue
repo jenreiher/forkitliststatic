@@ -289,7 +289,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1.6em;
 }
 
 a {
