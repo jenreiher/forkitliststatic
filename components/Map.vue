@@ -13,7 +13,7 @@
                 :position="m.position"
                 :icon="m.icon"
                 @click="toggleInfoWindow(m,index)"
-                clickable
+                :clickable="m.clickable"
             )
             GmapInfoWindow(
                 :options="infoOptions" 
@@ -73,7 +73,7 @@ export default {
 
     const iconUrl = "/office.svg";
 
-    this.geocode({ address: this.homebase, icon: iconUrl });
+    this.geocode({ address: this.homebase, icon: iconUrl, clickable: false });
     const list = this.restaurants;
     for (let step = 0; step <= 5; step++) {
       setTimeout(() => {
@@ -85,17 +85,20 @@ export default {
   },
   methods: {
     toggleInfoWindow: function(marker, idx) {
-      this.infoWindowPos = marker.position;
-      this.infoOptions.content = `<p><strong>${marker.name}</strong><br>${marker.description}</p><a href="https://www.google.com/maps/search/${marker.address} ${marker.city} ${marker.region} ${marker.country}" target="_blank">${marker.address} >></a>`;
+      console.log(marker.clickable);
+      if (marker.clickable === true) {
+        this.infoWindowPos = marker.position;
+        this.infoOptions.content = `<p><strong>${marker.name}</strong><br>${marker.description}</p><a href="https://www.google.com/maps/search/${marker.address} ${marker.city} ${marker.region} ${marker.country}" target="_blank">${marker.address} >></a>`;
 
-      //check if its the same marker that was selected if yes toggle
-      if (this.currentMidx == idx) {
-        this.infoWinOpen = !this.infoWinOpen;
-      }
-      //if different marker set infowindow to open and reset current marker index
-      else {
-        this.infoWinOpen = true;
-        this.currentMidx = idx;
+        //check if its the same marker that was selected if yes toggle
+        if (this.currentMidx == idx) {
+          this.infoWinOpen = !this.infoWinOpen;
+        }
+        //if different marker set infowindow to open and reset current marker index
+        else {
+          this.infoWinOpen = true;
+          this.currentMidx = idx;
+        }
       }
     },
     geolocate: function() {
@@ -104,6 +107,13 @@ export default {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
+
+        let currentPosition = {
+          position: this.center,
+          icon: "/person.svg",
+          clickable: false
+        };
+        this.addMarker(currentPosition);
       });
     },
     geocode(restaurant) {
@@ -125,6 +135,8 @@ export default {
               };
 
               restaurant.position = position;
+              restaurant.clickable =
+                restaurant.clickable === false ? false : true;
 
               this.addMarker(restaurant);
             }
