@@ -42,6 +42,7 @@ export default {
       currentPlace: null,
       center: { lat: 48.4284, lng: -123.3656 },
       markers: [],
+      places: [],
       infoWindowPos: null,
       infoWinOpen: false,
       infoOptions: {
@@ -58,6 +59,7 @@ export default {
     restaurants: {
       handler(newData, oldData) {
         if (this.restaurants.length > 0) {
+          this.markers = [];
           for (let step = 0; step <= 5; step++) {
             // Runs 5 times, with values of step 0 through 4.
             if (this.restaurants[step].address) {
@@ -85,7 +87,6 @@ export default {
   },
   methods: {
     toggleInfoWindow: function(marker, idx) {
-      console.log(marker.clickable);
       if (marker.clickable === true) {
         this.infoWindowPos = marker.position;
         this.infoOptions.content = `<p><strong>${marker.name}</strong><br>${marker.description}</p><a href="https://www.google.com/maps/search/${marker.address} ${marker.city} ${marker.region} ${marker.country}" target="_blank">${marker.address} >></a>`;
@@ -119,33 +120,50 @@ export default {
     geocode(restaurant) {
       let position = {};
       let address = restaurant.address;
-      this.$gmapApiPromiseLazy().then(() => {
-        const geocoder = new google.maps.Geocoder();
 
-        geocoder
-          .geocode({ address }, function(results, status) {})
-          .then(data => {
-            if (!!data.results[0].geometry.location) {
-              const latitude = data.results[0].geometry.location.lat();
-              const longitude = data.results[0].geometry.location.lng();
-
-              position = this.currentPosition = {
-                lat: latitude,
-                lng: longitude
-              };
-
-              restaurant.position = position;
-              restaurant.clickable =
-                restaurant.clickable === false ? false : true;
-
-              this.addMarker(restaurant);
-            }
-          });
+      this.places.forEach(function(item) {
+        if (
+          item.name === restaurant.name &&
+          item.address === restaurant.address
+        ) {
+          restaurant = item;
+        }
       });
+
+      if (!restaurant.position) {
+        this.$gmapApiPromiseLazy().then(() => {
+          const geocoder = new google.maps.Geocoder();
+
+          geocoder
+            .geocode({ address }, function(results, status) {})
+            .then(data => {
+              if (!!data.results[0].geometry.location) {
+                const latitude = data.results[0].geometry.location.lat();
+                const longitude = data.results[0].geometry.location.lng();
+
+                position = this.currentPosition = {
+                  lat: latitude,
+                  lng: longitude
+                };
+
+                restaurant.position = position;
+                restaurant.clickable =
+                  restaurant.clickable === false ? false : true;
+              }
+
+              return this.addMarker(restaurant);
+            });
+        });
+      } else {
+        this.addMarker(restaurant);
+      }
     },
     addMarker(restaurant) {
       if (!this.markers.includes(restaurant)) {
         this.markers.push(restaurant);
+      }
+      if (!this.places.includes(restaurant)) {
+        this.places.push(restaurant);
       }
     }
   }
