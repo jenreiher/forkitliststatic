@@ -60,7 +60,7 @@ export default {
   data() {
     return {
       restaurants: [],
-      cities: [],
+      cities: ["Victoria"],
       types: ["breakfast", "lunch", "dinner", "drinks", "coffee", "snacks"],
       icons: {
         breakfast: "egg-fried",
@@ -327,6 +327,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  min-height: 35px;
 }
 
 .header__navigation > * {
