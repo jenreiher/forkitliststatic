@@ -58,15 +58,7 @@ export default {
   watch: {
     restaurants: {
       handler(newData, oldData) {
-        if (this.restaurants.length > 0) {
-          this.markers = [];
-          for (let step = 0; step <= 5; step++) {
-            // Runs 5 times, with values of step 0 through 4.
-            if (this.restaurants[step].address) {
-              this.geocode(this.restaurants[step]);
-            }
-          }
-        }
+        this.addRestaurants(this.restaurants);
       }
     }
   },
@@ -76,16 +68,23 @@ export default {
     const iconUrl = "/office.svg";
 
     this.geocode({ address: this.homebase, icon: iconUrl, clickable: false });
-    const list = this.restaurants;
-    for (let step = 0; step <= 5; step++) {
-      setTimeout(() => {
-        if (list[step].address) {
-          this.geocode(list[step]);
-        }
-      }, 2000);
-    }
+    let data = this.restaurants;
+    this.addRestaurants(data);
   },
   methods: {
+    addRestaurants(data) {
+      if (data.length > 0) {
+        this.markers = [];
+        for (let step = 0; step <= 10; step++) {
+          // Runs 5 times, with values of step 0 through 4.
+          if (data[step] && data[step].address) {
+            setTimeout(() => {
+              this.geocode(data[step]);
+            }, 2000);
+          }
+        }
+      }
+    },
     toggleInfoWindow: function(marker, idx) {
       if (marker.clickable === true) {
         this.infoWindowPos = marker.position;
