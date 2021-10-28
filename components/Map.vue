@@ -1,27 +1,140 @@
 <template lang="pug">
-    GoogleMap(id="map" ref="Map")
+    div
+        GmapMap(
+            id="map" 
+            ref="Map" 
+            :zoom="13"
+            :center="center"
+            style="height: 300px; width: 100%; margin: 30px 0;"
+        )
+            GmapMarker(
+                :key="index"
+                v-for="(m, index) in markers"
+                :position="m.position"
+                :icon="m.icon"
+                @click="toggleInfoWindow(m,index)"
+                clickable
+            )
+            GmapInfoWindow(
+                :options="infoOptions" 
+                :position="infoWindowPos" 
+                :opened="infoWinOpen" 
+                @closeclick="infoWinOpen=false"
+            )
+
+        
         
 </template>
 <script>
 export default {
+  props: {
+    restaurants: {
+      type: Array,
+      default: () => []
+    },
+    homebase: {
+      type: String,
+      default: "2500 Bay St., Victoria BC, V8T 1S7, Canada"
+    }
+  },
   data() {
     return {
-      showInfo: false,
-      infoWindowContext: {
-        position: {
-          lat: 44.2899,
-          lng: 11.8774
+      currentPlace: null,
+      center: { lat: 48.4284, lng: -123.3656 },
+      markers: [],
+      infoWindowPos: null,
+      infoWinOpen: false,
+      infoOptions: {
+        content: "",
+        //optional: offset infowindow so it visually sits nicely on top of our marker
+        pixelOffset: {
+          width: 0,
+          height: -35
         }
       }
     };
   },
+  watch: {
+    restaurants: {
+      handler(newData, oldData) {
+        if (this.restaurants.length > 0) {
+          for (let step = 0; step <= 5; step++) {
+            // Runs 5 times, with values of step 0 through 4.
+            if (this.restaurants[step].address) {
+              this.geocode(this.restaurants[step]);
+            }
+          }
+        }
+      }
+    }
+  },
+  mounted() {
+    this.geolocate();
+
+    const iconUrl = "/office.svg";
+
+    this.geocode({ address: this.homebase, icon: iconUrl });
+    const list = this.restaurants;
+    for (let step = 0; step <= 5; step++) {
+      setTimeout(() => {
+        if (list[step].address) {
+          this.geocode(list[step]);
+        }
+      }, 2000);
+    }
+  },
   methods: {
-    toggleInfoWindow(context) {
-      this.infoWindowContext = context;
-      this.showInfo = true;
+    toggleInfoWindow: function(marker, idx) {
+      this.infoWindowPos = marker.position;
+      this.infoOptions.content = `<p><strong>${marker.name}</strong><br>${marker.description}</p><a href="https://www.google.com/maps/search/${marker.address} ${marker.city} ${marker.region} ${marker.country}" target="_blank">${marker.address} >></a>`;
+
+      //check if its the same marker that was selected if yes toggle
+      if (this.currentMidx == idx) {
+        this.infoWinOpen = !this.infoWinOpen;
+      }
+      //if different marker set infowindow to open and reset current marker index
+      else {
+        this.infoWinOpen = true;
+        this.currentMidx = idx;
+      }
     },
-    infoClicked(context) {
-      console.log(context);
+    geolocate: function() {
+      navigator.geolocation.getCurrentPosition(position => {
+        this.center = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+      });
+    },
+    geocode(restaurant) {
+      let position = {};
+      let address = restaurant.address;
+      this.$gmapApiPromiseLazy().then(() => {
+        const geocoder = new google.maps.Geocoder();
+
+        geocoder
+          .geocode({ address }, function(results, status) {})
+          .then(data => {
+            if (!!data.results[0].geometry.location) {
+              const latitude = data.results[0].geometry.location.lat();
+              const longitude = data.results[0].geometry.location.lng();
+
+              position = this.currentPosition = {
+                lat: latitude,
+                lng: longitude
+              };
+
+              restaurant.position = position;
+
+              this.addMarker(restaurant);
+            }
+          });
+      });
+    },
+    addMarker(restaurant) {
+      if (!this.markers.includes(restaurant)) {
+        this.markers.push(restaurant);
+      }
     }
   }
 };

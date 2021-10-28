@@ -1,5 +1,5 @@
 <template lang="pug">
-  ElContainer
+  ElContainer(v-if="dataLoaded")
     ElHeader(class="header" height="auto")
       h1.title
         span
@@ -38,6 +38,9 @@
                 span.type-icon
                   i(:class="getIcon(type)")
                 | {{type}}
+      
+      Map(v-if="filterRestaurants.length > 0" :restaurants="filterRestaurants" homebase="777 Broughton St #201, Victoria, BC V8W 3H2")
+
       .card-grid
         template(v-if="filterRestaurants.length === 0")
           ElCard(class="empty-state")
@@ -91,7 +94,8 @@ export default {
       ],
       currentCity: "Victoria",
       currentItinerary: "All",
-      itineraries: {}
+      itineraries: {},
+      dataLoaded: false
     };
   },
   mounted() {
@@ -150,6 +154,7 @@ export default {
       this.$data.restaurants = data;
       this.$data.cities = cities.sort((a, b) => a.localeCompare(b));
       this.$data.itineraries = itineraries;
+      this.$data.dataLoaded = true;
 
       return;
     });
@@ -163,7 +168,7 @@ export default {
       return data;
     },
     filterRestaurants() {
-      const data = this.$data.restaurants
+      const data = this.restaurants
         .filter(restaurant => {
           return restaurant.city === this.currentCity;
         })

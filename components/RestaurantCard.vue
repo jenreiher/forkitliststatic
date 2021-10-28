@@ -41,7 +41,7 @@ export default {
     },
     selectedTypes: {
       type: Array,
-      default: []
+      default: () => []
     }
   },
   computed: {
