@@ -39,7 +39,7 @@
                   i(:class="getIcon(type)")
                 | {{type}}
       
-      Map(v-if="filterRestaurants.length > 0" :restaurants="filterRestaurants" :homebase="!!homebase(currentCity) ? homebase(currentCity) : currentCity")
+      Map(v-if="filterRestaurants.length > 0" :restaurants="filterRestaurants" :homebase="!!homebase[currentCity] ? homebase[currentCity] : currentCity")
 
       .card-grid
         template(v-if="filterRestaurants.length === 0")
