@@ -67,10 +67,7 @@ export default {
         address: this.homebase, icon: iconUrl, clickable: false
       }, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 8,
-            center: results[0].geometry.location
-          });
+            this.center: results[0].geometry.location
         } else {
           alert('Geocode was not successful for the following reason: ' + status);
           // return null;
