@@ -39,7 +39,7 @@
                   i(:class="getIcon(type)")
                 | {{type}}
       
-      Map(v-if="filterRestaurants.length > 0" :restaurants="filterRestaurants" homebase="777 Broughton St #201, Victoria, BC V8W 3H2")
+      Map(v-if="filterRestaurants.length > 0" :restaurants="filterRestaurants" :homebase="homebase(currentCity)")
 
       .card-grid
         template(v-if="filterRestaurants.length === 0")
@@ -92,6 +92,10 @@ export default {
         "coffee",
         "snacks"
       ],
+      homebase: {
+        Victoria: "777 Broughton St #201, Victoria, BC V8W 3H2",
+        "San Francisco": "535 Mission St, San Francisco, CA 94105, United States"
+      },
       currentCity: "Victoria",
       currentItinerary: "All",
       itineraries: {},
