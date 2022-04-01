@@ -60,7 +60,10 @@ export default {
       handler(newData, oldData) {
         this.addRestaurants(this.restaurants);
       }
-    }
+    },
+    homebase: {
+      this.geocode({ address: this.homebase, icon: iconUrl, clickable: false });
+    },
   },
   mounted() {
     this.geolocate();
