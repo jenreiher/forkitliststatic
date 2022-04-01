@@ -109,6 +109,10 @@ export default {
       ? this.$route.query.itinerary
       : this.currentItinerary;
 
+    this.currentCity = this.$route.query.city
+      ? this.$route.query.city
+      : this.currentCity;
+
     let queryTypes = [];
     this.$route.query.breakfast ? queryTypes.push("breakfast") : null;
     this.$route.query.lunch ? queryTypes.push("lunch") : null;
@@ -222,6 +226,7 @@ export default {
       window.history.pushState({}, "", state);
     },
     setCurrentCity(city) {
+      window.history.pushState({}, "", `?city=${city}`);
       return (this.currentCity = city);
     },
     getIcon(type) {
