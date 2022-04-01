@@ -62,17 +62,32 @@ export default {
       }
     },
     homebase: {
-      const iconUrl = "/office.svg";
-      geocoder.geocode({
-        address: this.homebase, icon: iconUrl, clickable: false
-      }, function(results, status) {
-        if (status === google.maps.GeocoderStatus.OK) {
-            this.center: results[0].geometry.location
-        } else {
-          alert('Geocode was not successful for the following reason: ' + status);
-          // return null;
-        }
-      });
+      handler(newData, oldData) {
+        const iconUrl = "/office.svg";
+        const geocoder = new google.maps.Geocoder();
+        geocoder.geocode({
+          address: newData
+        }).then((result) => {
+          const { results } = result;
+          
+          return results;
+        })
+        .then((data) => {
+          const currentPosition = {
+            position: data[0].geometry.location,
+            icon: iconUrl,
+            clickable: false
+          };
+          this.addMarker(currentPosition)
+          return data          
+        })
+        .then((data) => {
+          return this.center = data[0].geometry.location
+        })
+        .catch((e) => {
+          alert("Geocode was not successful for the following reason: " + e);
+        });
+      }
     },
   },
   mounted() {
