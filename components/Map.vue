@@ -106,7 +106,7 @@ export default {
         data.forEach((element, i) => {
           setTimeout(() => {
             this.geocode(data[i]);
-          }, i * 750);  // one sec interval
+          }, i * 850);  // one sec interval
           if(i === 82) {
             console.log("done")
           }
