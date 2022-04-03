@@ -14,6 +14,7 @@
                 :icon="m.icon"
                 @click="toggleInfoWindow(m,index)"
                 :clickable="m.clickable"
+                :animation='2'
             )
             GmapInfoWindow(
                 :options="infoOptions" 
@@ -102,15 +103,14 @@ export default {
   methods: {
     addRestaurants(data) {
       if (data.length > 0) {
-        this.markers = [];
-        for (let step = 0; step <= 10; step++) {
-          // Runs 5 times, with values of step 0 through 4.
-          if (data[step] && data[step].address) {
-            setTimeout(() => {
-              this.geocode(data[step]);
-            }, 2000);
+        data.forEach((element, i) => {
+          setTimeout(() => {
+            this.geocode(data[i]);
+          }, i * 750);  // one sec interval
+          if(i === 82) {
+            console.log("done")
           }
-        }
+        });
       }
     },
     toggleInfoWindow: function(marker, idx) {
