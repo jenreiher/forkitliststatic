@@ -107,7 +107,7 @@ export default {
           setTimeout(() => {
             this.geocode(data[i]);
           }, i * 850);  // one sec interval
-          if(i === 82) {
+          if(i === data.length) {
             console.log("done")
           }
         });
