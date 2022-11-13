@@ -452,21 +452,21 @@
 486,"Maiz, Canela y Cilantro",,,"Calle 70 464, Barrio de Santiago, Centro",,Yes,Yes,No,No,No,No,Merida,Yucatan,Mexico
 487,Blue Bag Coffee Roasters,,,"Calle 55 543, Barrio de Santiago, Centro",,No,No,No,No,Yes,Yes,Merida,Yucatan,Mexico
 488,LoQueHay Cafe,,,"Calle 55 533 X 64 y 66, Centro",,Yes,Yes,Yes,No,No,No,Merida,Yucatan,Mexico
-489,Ono Seafood,Cheap and plentiful poke,,"747 Kapahulu Ave., Apt 4",,No,Yes,No,No,No,No,Honolulu,Hawaii,USA
-490,Helena's Hawaiian Food,Famous for its casual Hawaiian-Chinese classics,,1240 N School St,,Yes,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-491,Rainbow Drive In,Famous Plate Lunch,,3308 Kanaina Avenue,,No,Yes,No,No,No,No,Honolulu,Hawaii,USA
-492,Alicia's Market,Roast meats and poke,,267 Mokauea St,,No,Yes,No,No,No,No,Honolulu,Hawaii,USA
-493,Pig and Lady,Modern Vietnamese,,83 N. King St,,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-494,Chun Wah Kam,MANAPUA steam buns,,537 Pensacola St,,Yes,Yes,No,No,No,No,Honolulu,Hawaii,USA
-495,Maguro Brothers,Sashimi,,415 Nāhua St,,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-496,Musubi Cafe,Spam Musubi bento boxes,,"Pacific Monarch Hotel, 2427 Kūhiō Ave. #1F",,Yes,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-497,Kona Coffee Purveyors,Upscale,," Kuhio Avenue Mall Entrance - International Marketplace, 2330 Kalakaua Ave #160",,Yes,No,No,No,Yes,Yes,Honolulu,Hawaii,USA
-498,Hawaiian Aroma Cafe,Laid back,,"upstairs in the Beachcomber, 2300 Kalakaua Ave",,Yes,No,No,No,Yes,Yes,Honolulu,Hawaii,USA
-499,Island Vintage Coffee,Coffee and breakfast bowls,,2301 Kalakaua Ave,,Yes,No,No,No,Yes,Yes,Honolulu,Hawaii,USA
-500,Marukame Udon,Cheap and delicious freshly made udon,,2310 Kūhiō Ave,,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-501,Leonard's Bakery,Masaladas - portugese donuts,,933 KAPAHULU AVE,,No,No,No,No,No,No,Honolulu,Hawaii,USA
-502,Restaurant XO,Try the foi gras fried rice,,3434 Waialae Ave,,No,No,Yes,Yes,No,No,Honolulu,Hawaii,USA
-503,KCC Farmer's Market,Saturdays 7:30am-11am,,Kapiolani Community College – Parking Lot C 4303 Diamond Head Rd,,Yes,No,No,No,No,No,Honolulu,Hawaii,USA
+489,Ono Seafood,Cheap and plentiful poke,Seafood,"747 Kapahulu Ave., Apt 4",,No,Yes,No,No,No,No,Honolulu,Hawaii,USA
+490,Helena's Hawaiian Food,Famous for its casual Hawaiian-Chinese classics,Local Specialities,1240 N School St,,Yes,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+491,Rainbow Drive In,Famous Plate Lunch,Local Specialities,3308 Kanaina Avenue,,No,Yes,No,No,No,No,Honolulu,Hawaii,USA
+492,Alicia's Market,Roast meats and poke,"Local Specialities, Seafood",267 Mokauea St,,No,Yes,No,No,No,No,Honolulu,Hawaii,USA
+493,Pig and Lady,Modern Vietnamese,"Dining out in Style, Greatest Hits",83 N. King St,,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+494,Chun Wah Kam,MANAPUA steam buns,Cheap Eats,537 Pensacola St,,Yes,Yes,No,No,No,No,Honolulu,Hawaii,USA
+495,Maguro Brothers,Sashimi,Seafood,415 Nāhua St,,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+496,Musubi Cafe,Spam Musubi bento boxes,"Cheap Eats, Local Specialities","Pacific Monarch Hotel, 2427 Kūhiō Ave. #1F",,Yes,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+497,Kona Coffee Purveyors,Upscale,Local Specialities," Kuhio Avenue Mall Entrance - International Marketplace, 2330 Kalakaua Ave #160",,Yes,No,No,No,Yes,Yes,Honolulu,Hawaii,USA
+498,Hawaiian Aroma Cafe,Laid back,Greatest Hits,"upstairs in the Beachcomber, 2300 Kalakaua Ave",,Yes,No,No,No,Yes,Yes,Honolulu,Hawaii,USA
+499,Island Vintage Coffee,Coffee and breakfast bowls,Greatest Hits,2301 Kalakaua Ave,,Yes,No,No,No,Yes,Yes,Honolulu,Hawaii,USA
+500,Marukame Udon,Cheap and delicious freshly made udon,Cheap Eats,2310 Kūhiō Ave,,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+501,Leonard's Bakery,Masaladas - portugese donuts,"Local Specialities, Sweet Snacks",933 KAPAHULU AVE,,No,No,No,No,No,No,Honolulu,Hawaii,USA
+502,Restaurant XO,Try the foi gras fried rice,Dining out in Style,3434 Waialae Ave,,No,No,Yes,Yes,No,No,Honolulu,Hawaii,USA
+503,KCC Farmer's Market,Saturdays 7:30am-11am,Local Specialities,Kapiolani Community College – Parking Lot C 4303 Diamond Head Rd,,Yes,No,No,No,No,No,Honolulu,Hawaii,USA
 504,Pink's hot dogs,Casual fun hot dog options,,709 N La Brea Ave,,No,Yes,Yes,No,No,No,Los Angeles,California,USA
 505,Venturi-Schulze Vineyards,,,"4235 Vineyard Rd, Cobble Hill, BC V0R 1L5",,No,No,No,Yes,No,No,Cobble Hill,BC,Canada
 506,Glenterra Winery,,,"3897 Cobble Hill Rd, Cobble Hill, British Columbia V0R 1L5",,No,No,No,Yes,No,No,Cobble Hill,BC,Canada
@@ -483,8 +483,8 @@
 518,Vis-a-Vis and Pennyfarthing Pub,"Upscale fare on one menu, English pub on the other - something for everyone!",Craft Draught Beer,"2232 Oak Bay Ave,",https://www.visavisoakbay.com/,No,Yes,Yes,No,No,No,Victoria,BC,Canada
 519,Discovery Coffee Oak Bay,Great espresso based drinks,,1964 Oak Bay Avenue,https://discoverycoffee.com/pages/locations,No,No,No,No,Yes,Yes,Victoria,BC,Canada
 520,Ottavio,"Italian deli with cheeses, meats and to-go items",,2272 Oak Bay Ave,https://ottaviovictoria.com/,No,Yes,No,No,No,No,Victoria,BC,Canada
-521,Ahi assassin's,Sustainable poke,,3111 Castle St,,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-522,Uncle clay's,Shave ice,,"820 W Hind Dr #116, Honolulu, HI 96821, United States",,No,No,No,No,No,No,Honolulu,Hawaii,USA
+521,Ahi assassin's,Sustainable poke,Seafood,3111 Castle St,,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+522,Uncle clay's,Shave ice,"Local Specialities, Sweet Snacks","820 W Hind Dr #116, Honolulu, HI 96821, United States",,No,No,No,No,No,No,Honolulu,Hawaii,USA
 523,Red Truck Brewery,Pub style food and all-day breakfast,,295 East 1st Ave,https://redtruckbeer.com/vancouver-truck-stop-menu-1/,No,Yes,Yes,Yes,No,No,Vancouver,BC,Canada
 524,Mahony's False Creek,Upscale pub food,,601 Stamps Landing,https://www.mahonystavern.com/menu,No,Yes,Yes,Yes,No,No,Vancouver,BC,Canada
 525,Mahony's Convention Centre,Upscale pub food,,1055 Canada Pl #36,https://www.mahonystavern.com/menu,No,Yes,Yes,No,No,No,Vancouver,BC,Canada
@@ -503,23 +503,23 @@
 538,East Van Brewing,Lobster rolls,,1675 Venables St,https://www.eastvanbrewing.com/food-menu/,No,No,No,No,No,No,Vancouver,BC,Canada
 539,Dalina,Quirky brunch and affordable to-go options,,687 Main Street,https://dalina.ca/,Yes,Yes,No,No,Yes,Yes,Vancouver,BC,Canada
 540,Provence Marinaside,High end dining with an excellent wine list and local seafood,,1177 Marinaside Crescent,https://www.provencemarinaside.ca/,Yes,Yes,Yes,Yes,No,No,Vancouver,BC,Canada
-541,Bar Leather Apron,Fancy cocktails,,745 Fort Street Mall Suite #127,https://www.barleatherapron.com/,No,No,Yes,Yes,No,No,Honolulu,Hawaii,USA
-542,Foodland Farms,Grocery store with poke bar,,"1450 Ala Moana Blvd, Honolulu, HI 96814",,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-543,Fort Ruger Market,Supermarket with poke,,3585 Alohea Ave,https://www.facebook.com/RugerMarket/,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-544,Gina's BBQ,Hawaiian style BBQ,,2919 Kapiolani Blvd #2,https://ginasbbq.com/,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-545,Highway Inn,"Hawaiian style breakfast, lunch and dinner",,680 Ala Moana Blvd #105,https://www.myhighwayinn.com/,Yes,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-546,Chun Wah Kam,"Noodles, dim sum and char sui",,537 Pensacola St,https://chunwahkam.com/,Yes,Yes,No,No,No,No,Honolulu,Hawaii,USA
-547,Kyung's Seafood,Casual seafood,,1269 S King St,https://www.facebook.com/kyungsseafood/,Yes,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-548,Waiola Shave Ice,,,"2135 Waiola St, Honolulu",,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
-549,Banan,Dairy free ice cream treats,,2301 Kalakaua Ave,https://banan.co/,No,Yes,Yes,No,No,Yes,Honolulu,Hawaii,USA
-550,Ethel's Grill,Casual Japanese,,232 Kalihi st,https://www.instagram.com/ethelsgrill_kalihi/,Yes,Yes,No,No,No,No,Honolulu,Hawaii,USA
+541,Bar Leather Apron,Fancy cocktails,Belly up to the Bar,745 Fort Street Mall Suite #127,https://www.barleatherapron.com/,No,No,Yes,Yes,No,No,Honolulu,Hawaii,USA
+542,Foodland Farms,Grocery store with poke bar,Seafood,"1450 Ala Moana Blvd, Honolulu, HI 96814",,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+543,Fort Ruger Market,Supermarket with poke,Seafood,3585 Alohea Ave,https://www.facebook.com/RugerMarket/,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+544,Gina's BBQ,Hawaiian style BBQ,Local Specialities,2919 Kapiolani Blvd #2,https://ginasbbq.com/,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+545,Highway Inn,"Hawaiian style breakfast, lunch and dinner","Brunch for Days, Local Specialities",680 Ala Moana Blvd #105,https://www.myhighwayinn.com/,Yes,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+546,Chun Wah Kam,"Noodles, dim sum and char sui",Cheap Eats,537 Pensacola St,https://chunwahkam.com/,Yes,Yes,No,No,No,No,Honolulu,Hawaii,USA
+547,Kyung's Seafood,Casual seafood,Seafood,1269 S King St,https://www.facebook.com/kyungsseafood/,Yes,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+548,Waiola Shave Ice,,Sweet Snacks,"2135 Waiola St, Honolulu",,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+549,Banan,Dairy free ice cream treats,Sweet Snacks,2301 Kalakaua Ave,https://banan.co/,No,Yes,Yes,No,No,Yes,Honolulu,Hawaii,USA
+550,Ethel's Grill,Casual Japanese,Cheap Eats,232 Kalihi st,https://www.instagram.com/ethelsgrill_kalihi/,Yes,Yes,No,No,No,No,Honolulu,Hawaii,USA
 551,Milltown Pub and Grill,"Great patio, brunch on weekends",,101-9191 Bentley Street,https://milltownbar.com/,Yes,Yes,Yes,Yes,No,No,Vancouver,BC,Canada
-552,Sushi Sho,Fancy pants sushi in the Ritz,,383 Kalaimoku St,https://www.ritzcarlton.com/en/hotels/hawaii/waikiki/dining/sushi-sho,No,No,Yes,No,No,No,Honolulu,Hawaii,USA
+552,Sushi Sho,Fancy pants sushi in the Ritz,Dining out in Style,383 Kalaimoku St,https://www.ritzcarlton.com/en/hotels/hawaii/waikiki/dining/sushi-sho,No,No,Yes,No,No,No,Honolulu,Hawaii,USA
 553,Hokkaido Santouka Ramen Robson,,,1690 Robson St,https://www.santouka-canada.com/,No,Yes,Yes,No,No,No,Vancouver,BC,Canada
 554,Tom Sushi,Affordable but good quality sushi,,1175 Davie St,https://tomsushi.ca/,No,Yes,Yes,No,No,No,Vancouver,BC,Canada
 555,Kingyo Izakaya,Japanese with more variety than most,,871 Denman St,https://kingyo-izakaya.ca/,No,Yes,Yes,No,No,No,Vancouver,BC,Canada
-556,Koko Head Cafe,All day breakfast and dumplings,,1145c 12th Ave,http://kokoheadcafe.com/brunch-all-day/,Yes,Yes,No,No,No,No,Honolulu,Hawaii,USA
-557,Doraku Sushi,Reserve ahead. Daily bento boxes and sunday brunch,,Royal Hawaiian Center 2233 Kalakaua Avenue Suite 304,https://www.dorakusushi.com/store_locator/waikiki/,Yes,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+556,Koko Head Cafe,All day breakfast and dumplings,Brunch for Days,1145c 12th Ave,http://kokoheadcafe.com/brunch-all-day/,Yes,Yes,No,No,No,No,Honolulu,Hawaii,USA
+557,Doraku Sushi,Reserve ahead. Daily bento boxes and sunday brunch,Seafood,Royal Hawaiian Center 2233 Kalakaua Avenue Suite 304,https://www.dorakusushi.com/store_locator/waikiki/,Yes,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
 558,Mosi's Bakery,Great breakfast and pasteries,"Brunch for Days, Sweet Snacks",5303 W Saanich Rd,https://www.mosibakery.com/,Yes,Yes,No,No,No,No,Victoria,BC,Canada
 559,Symphony Vineyard,Epic garden for wine tastings,Patio Life,6409 Oldfield Rd,https://symphonyvineyard.com/,No,No,No,Yes,No,No,Victoria,BC,Canada
 560,Pizzeria Prima Strada Cook St,Neopolitan-style wood-fired pizza,Greatest Hits,230 Cook St,https://pizzeriaprimastrada.com/,No,Yes,Yes,No,No,No,Victoria,BC,Canada
@@ -602,3 +602,20 @@ Pier 47, Fisherman’s Wharf",https://scomas.com/,No,Yes,Yes,No,No,No,San Franci
 667,Dumpling Time,Casual-but-elevated dumplings & beer,"Cheap Eats, Gluten-free Friendly, Vegetarian","11 Division St, San Francisco",https://www.dumplingtime.com/,No,Yes,Yes,Yes,No,No,San Francisco,California,USA
 668,Mazarine Coffee,West coast cafe with food,"Gluten-free Friendly, Vegetarian",720 Market St,https://mazarinecoffee.com/,Yes,Yes,No,No,Yes,Yes,San Francisco,California,USA
 669,Dandelion Cafe,Chocolate makers,Sweet Snacks,740 Valencia St,https://store.dandelionchocolate.com/pages/visit-us,No,Yes,No,No,Yes,Yes,San Francisco,California,USA
+670,Katsumidori Sushi,Seasonal ingredient sushi,Seafood,"Prince Waikiki, 1F
+100 Holomoana St",http://katsumidori-hawaii.com/,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+671,Ginza Bairin,Fancy pants tonkatsu,Dining out in Style,255 Beach Walk,https://www.ginzabairinhawaii.com/,No,Yes,Yes,No,No,No,Honolulu,Hawaii,USA
+672,Island Vintage Wine Bar,,Belly up to the Bar,"Royal Hawaiian Center,
+Building C, Level 2
+2301 Kalakaua Avenue",https://www.islandvintagewinebar.com/,No,No,No,Yes,No,No,Honolulu,Hawaii,USA
+673,Senia,"Upscale fusion. Ala carte-style snacks and
+ family-style dishes. No reservations required at lunch.",Dining out in Style,"75 N. King St. Honolulu, HI 96817",https://www.restaurantsenia.com,No,No,Yes,No,No,No,Honolulu,Hawaii,USA
+674,Monkeypod,Local seasonal fare,"Dining out in Style, Local Specialities","92-1048 Olani Street
+Kapolei, HI 96707",https://monkeypodkitchen.com/dine_ko_olina,No,Yes,Yes,Yes,No,No,Honolulu,Hawaii,USA
+675,Mud Hen,Hipster Hawaiian Tapas,"Cheap Eats, Local Specialities",3452 Waialae Avenue,https://www.mudhenwater.com/,Yes,Yes,Yes,Yes,Yes,No,Honolulu,Hawaii,USA
+676,House Without a Key,"Great views, great Mai Tai",Dining out in Style,https://maps.google.com/maps/place/2199%20Kalia%20Road%20Honolulu%20HI%2096815,https://www.halekulani.com/dining/house-without-a-key/,Yes,Yes,Yes,Yes,No,No,Honolulu,Hawaii,USA
+677,Duc’s Bistro,Interesting and not too expensive,Dining out in Style,https://goo.gl/maps/A5UuoXYM91GRooc48,https://www.ducsbistro.com/,No,Yes,Yes,Yes,No,No,honolulu,,
+678,Holey Grail Donuts,"Fun donuts, multiple locations","Food Truck Fun, Sweet Snacks",325 Seaside Ave,https://www.holeygraildonuts.com/,No,No,No,No,No,Yes,,,
+679,Kai Coffee,In the Hyatt & Alohilani Resort,Greatest Hits,https://goo.gl/maps/BJYSaE6G13r,,No,No,No,No,Yes,No,,,
+680,Hideout Coffee,Portland chain,Greatest Hits,https://goo.gl/maps/J2mmkte6mpG2,,No,No,No,No,Yes,No,,,
+681,Ars Coffee,Near Diamond Head,Greatest Hits,https://goo.gl/maps/8hTtTZ23WW62,,No,No,No,No,Yes,No,,,
